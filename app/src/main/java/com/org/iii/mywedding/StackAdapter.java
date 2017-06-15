@@ -55,7 +55,7 @@ public class StackAdapter extends ArrayAdapter<StackItem> {
     }
 
 
-    // Find Image ID corresponding to the name of the image (in the drawable folder).
+    // Find Image ID corresponding to the name of the image (in the drawable folder11).
     public int getDrawableResIdByName(String resName)  {
         String pkgName = context.getPackageName();
         // Return 0 if not found.
