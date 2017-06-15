@@ -33,8 +33,10 @@ public class StackMain extends Activity {
         }
 
         StackAdapter adapt = new StackAdapter(this, R.layout.actstackview, items);
+        stackView.clearAnimation();
         stackView.setAdapter(adapt);
         stackView.setHorizontalScrollBarEnabled(true);
+
         stackView.setBackgroundColor(Color.rgb(0, 0, 0));
 
         buttonNext.setOnClickListener(new Button.OnClickListener() {

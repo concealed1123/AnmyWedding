@@ -5,14 +5,16 @@
     android:orientation="vertical" >
 
     <ImageView
-        android:scaleType="fitXY"
         android:id="@+id/imageView"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        android:src="@drawable/image1"
-        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1" />
 
     <TextView
         android:id="@+id/textView"

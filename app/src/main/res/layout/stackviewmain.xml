@@ -22,9 +22,15 @@
         android:id="@+id/stackView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
         android:layout_marginTop="70dp"
-        android:layout_marginBottom="70dp">
-    </StackView>
+        android:animateFirstView="false"
+        android:animateLayoutChanges="false"
+        android:animationCache="true"
+        android:clickable="false"
+        android:elevation="0dp"
+        android:loopViews="true"
+        android:theme="@android:style/Widget.DeviceDefault.Light.StackView"></StackView>
 
     <Button
         style="?android:attr/buttonStyleSmall"
