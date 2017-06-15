@@ -26,7 +26,7 @@ public class ActLogin extends AppCompatActivity {
 
                 String uid = txtAccount.getText().toString();
                 String pw = txtPassword.getText().toString();
-                if (uid.equals("marco") && pw.equals("123")){ //登入成功
+                if (uid.equals("") && pw.equals("")){ //登入成功
                     SharedPreferences setting =
                             getSharedPreferences("atm", MODE_PRIVATE);
                     setting.edit()
