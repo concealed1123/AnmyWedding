@@ -22,12 +22,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ActMain" />
         <activity android:name=".StackMain" />
-
-
         <activity
             android:name=".ActTab"
             android:label="@string/title_activity_act_tab"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ActManual" />
     </application>
 
 </manifest>
