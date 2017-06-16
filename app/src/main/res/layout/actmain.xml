@@ -1,73 +1,119 @@
 <LinearLayout
+    android:background="#5038"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android" >
+
     <LinearLayout
-    android:layout_weight="1"
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-    <ImageButton
-        android:layout_margin="10dp"
-        android:layout_weight="1"
-        android:scaleType="fitXY"
-        android:src="@drawable/test1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <ImageButton
+                android:id="@+id/btnService1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/test1" />
+
+            <ImageButton
+                android:id="@+id/btnService2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/test2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:clickable="false"
-                android:text="TEST TEST" >
-            </TextView>
-        <ImageButton
-            android:layout_margin="10dp"
-            android:scaleType="fitXY"
-            android:layout_weight="1"
-            android:src="@drawable/test2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+                android:gravity="center"
+                android:text="拍婚紗"></TextView>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_weight="1"
                 android:clickable="false"
-                android:text="TEST TEST" >
-            </TextView>
-
+                android:gravity="center"
+                android:text="婚禮攝影"></TextView>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageButton
-            android:layout_margin="10dp"
-            android:scaleType="fitXY"
-            android:layout_weight="1"
-            android:src="@drawable/test3"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <ImageButton
-            android:layout_margin="10dp"
-            android:scaleType="fitXY"
-            android:layout_weight="1"
-            android:src="@drawable/common_google_signin_btn_icon_dark"
+            android:layout_height="200dp"
+            android:layout_weight="0.54">
+
+            <ImageButton
+                android:id="@+id/btnService3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/makeup" />
+
+            <ImageButton
+                android:id="@+id/btnService4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:src="@drawable/site" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="23dp">
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="新娘秘書"></TextView>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="婚宴場地"
+                android:layout_weight="1"></TextView>
+        </LinearLayout>
     </LinearLayout>
+
 
 
 
 
 </LinearLayout>
-
-
-
-
-
