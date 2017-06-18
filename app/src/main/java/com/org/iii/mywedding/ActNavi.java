@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -82,9 +83,14 @@ public class ActNavi extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            FragmentMember fragmentmember = new FragmentMember();
+            FragmentManager manager =  getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,fragmentmember).commit();
         } else if (id == R.id.nav_gallery) {
-            startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActTab.class));
+            FragmentGallery fragmentgallery = new FragmentGallery();
+            FragmentManager manager =  getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,fragmentgallery).commit();
+
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
