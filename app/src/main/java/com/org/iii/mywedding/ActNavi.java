@@ -86,7 +86,7 @@ public class ActNavi extends AppCompatActivity
         } else if (id == R.id.nav_gallery) {
             startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActTab.class));
         } else if (id == R.id.nav_slideshow) {
-
+            startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActWhiptheGroom.class));
         } else if (id == R.id.nav_manage) {
             startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActManual.class));
         } else if (id == R.id.nav_share) {

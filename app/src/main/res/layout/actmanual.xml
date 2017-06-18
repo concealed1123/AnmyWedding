@@ -8,20 +8,8 @@
     android:layout_height="match_parent"
     tools:context="com.org.iii.mywedding.ActManual">
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:weightSum="1">
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="160dp"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:text="拍婚紗"
-            android:background="@drawable/a14789511"/>
-
+        android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,12 +18,46 @@
             android:text="      " >
         </TextView>
 
-        <ImageButton
-            android:layout_width="183dp"
-            android:layout_height="207dp"
-            android:text="婚禮攝影"
-            android:background="@drawable/a129991" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="   "></TextView>
+
+        <ImageButton
+            android:id="@+id/imgbtnWeddingPhoto"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/a14789511"
+            android:scaleType="fitXY"
+            android:text="拍婚紗"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="   "></TextView>
+
+        <ImageButton
+            android:id="@+id/imgbtnWeddingRec"
+            android:layout_width="173dp"
+            android:layout_height="193dp"
+            android:background="@drawable/a129991"
+            android:text="婚禮攝影" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,9 +69,16 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="    " >
+        </TextView>
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/imgbtnWeddingSac"
             android:layout_width="154dp"
             android:layout_height="264dp"
             android:background="@drawable/a14698251"
@@ -65,12 +94,19 @@
          </TextView>
 
         <ImageButton
-            android:id="@+id/button3"
-            android:layout_width="185dp"
-            android:layout_height="243dp"
+            android:id="@+id/imgbtnWeddingPlace"
+            android:layout_width="168dp"
+            android:layout_height="221dp"
             android:background="@drawable/a15261741"
-            android:text="婚宴場地"
-            android:layout_weight="0.35" />
+            android:text="婚宴場地" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="    " >
+        </TextView>
 
     </LinearLayout>
 </LinearLayout>
