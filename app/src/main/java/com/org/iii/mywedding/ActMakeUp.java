@@ -42,6 +42,12 @@ public class ActMakeUp extends AppCompatActivity {
 
         }
     };
+    private View.OnClickListener btnHome_click = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(ActMakeUp.this,ActNavi.class));
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +67,8 @@ public class ActMakeUp extends AppCompatActivity {
         btnLast.setOnClickListener(btnLast_click);
         btnList = (Button) findViewById(R.id.btnList);
         btnList.setOnClickListener(btnList_click);
+        btnHome = (Button) findViewById(R.id.btnHome);
+        btnHome.setOnClickListener(btnHome_click);
 
     }
     Button btnFirst;
@@ -68,4 +76,5 @@ public class ActMakeUp extends AppCompatActivity {
     Button btnPrevious;
     Button btnLast;
     Button btnList;
+    Button btnHome;
 }

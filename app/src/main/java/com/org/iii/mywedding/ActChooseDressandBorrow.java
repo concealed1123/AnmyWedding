@@ -1,5 +1,6 @@
 package com.org.iii.mywedding;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,31 +11,42 @@ public class ActChooseDressandBorrow extends AppCompatActivity {
     private View.OnClickListener btnFirst_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(ActChooseDressandBorrow.this,ActPhotoServices.class));
 
         }
     };
     private View.OnClickListener btnNext_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(ActChooseDressandBorrow.this,ActPayment.class));
 
         }
     };
     private View.OnClickListener btnPrevious_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(ActChooseDressandBorrow.this,ActPickphotoandArtedit.class));
 
         }
     };
     private View.OnClickListener btnLast_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(ActChooseDressandBorrow.this,ActPayment.class));
 
         }
     };
     private View.OnClickListener btnList_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(ActChooseDressandBorrow.this,ActWeddingPhoto.class));
 
+        }
+    };
+    private View.OnClickListener btnHome_click = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(ActChooseDressandBorrow.this,ActNavi.class));
         }
     };
 
@@ -56,6 +68,8 @@ public class ActChooseDressandBorrow extends AppCompatActivity {
         btnLast.setOnClickListener(btnLast_click);
         btnList = (Button) findViewById(R.id.btnList);
         btnList.setOnClickListener(btnList_click);
+        btnHome = (Button) findViewById(R.id.btnHome);
+        btnHome.setOnClickListener(btnHome_click);
 
     }
     Button btnFirst;
@@ -63,4 +77,5 @@ public class ActChooseDressandBorrow extends AppCompatActivity {
     Button btnPrevious;
     Button btnLast;
     Button btnList;
+    Button btnHome;
 }
