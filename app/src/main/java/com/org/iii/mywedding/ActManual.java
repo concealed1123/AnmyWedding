@@ -22,7 +22,7 @@ public class ActManual extends AppCompatActivity {
 
         }
     };
-    private View.OnClickListener imgbtnWeddingSac_click = new View.OnClickListener() {
+    private View.OnClickListener imgbtnWeddingSec_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 
@@ -47,15 +47,15 @@ public class ActManual extends AppCompatActivity {
         imgbtnWeddingPhoto.setOnClickListener(imgbtnWeddingPhoto_click);
         imgbtnWeddingRec = (ImageButton) findViewById(R.id.imgbtnWeddingRec);
         imgbtnWeddingRec.setOnClickListener(imgbtnWeddingRec_click);
-        imgbtnWeddingSac = (ImageButton) findViewById(R.id.imgbtnWeddingSac);
-        imgbtnWeddingSac.setOnClickListener(imgbtnWeddingSac_click);
+        imgbtnWeddingSec = (ImageButton) findViewById(R.id.imgbtnWeddingSec);
+        imgbtnWeddingSec.setOnClickListener(imgbtnWeddingSec_click);
         imgbtnWeddingPlace = (ImageButton) findViewById(R.id.imgbtnWeddingPlace);
         imgbtnWeddingPlace.setOnClickListener(imgbtnWeddingPlace_click);
 
     }
     ImageButton imgbtnWeddingPhoto;
     ImageButton imgbtnWeddingRec;
-    ImageButton imgbtnWeddingSac;
+    ImageButton imgbtnWeddingSec;
     ImageButton imgbtnWeddingPlace;
 
 
