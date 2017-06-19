@@ -104,7 +104,10 @@ public class ActNavi extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
             startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActWhiptheGroom.class));
         } else if (id == R.id.nav_manage) {
-            startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActManual.class));
+            //startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActManual.class));
+            ActManual_Fragment actManual_fragment = new ActManual_Fragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,actManual_fragment).commit();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
