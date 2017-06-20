@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/makeup_fragment"
-    tools:context="com.org.iii.mywedding.ActMakeUp_Fragment">
+    tools:context="com.org.iii.mywedding.ActPhotoProduction_Fragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="化妝造型"
+        android:text="攝影產品"
         android:textSize="40dp"
         android:textAlignment="center"
         android:layout_weight="1"/>
@@ -83,6 +82,5 @@
 
 
     </LinearLayout>
-
 
 </LinearLayout>

@@ -10,18 +10,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.Toast;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ActPhotoServices_Fragment.OnFragmentInteractionListener} interface
+ * {@link ActPhotoProduction_Fragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ActPhotoServices_Fragment#newInstance} factory method to
+ * Use the {@link ActPhotoProduction_Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ActPhotoServices_Fragment extends Fragment {
+public class ActPhotoProduction_Fragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -32,10 +32,14 @@ public class ActPhotoServices_Fragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
     ///////////////////////////////////////////////////////////////////////////////
     private View.OnClickListener btnFirst_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            Fragment actphotoservices_frgament = new ActPhotoServices_Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,actphotoservices_frgament).commit();
 
         }
     };
@@ -43,9 +47,10 @@ public class ActPhotoServices_Fragment extends Fragment {
     private View.OnClickListener btnNext_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Fragment actmakeup_fragment = new ActMakeUp_Fragment();
+            Fragment act_gift_and_lend_Things_fragment = new Fragment();
             FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,actmakeup_fragment).commit();
+            manager.beginTransaction().replace(R.id.fragment_main,act_gift_and_lend_Things_fragment).commit();
+
 
         }
     };
@@ -53,6 +58,9 @@ public class ActPhotoServices_Fragment extends Fragment {
     private View.OnClickListener btnPrevious_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            Fragment actmakeup_fragment = new ActMakeUp_Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,actmakeup_fragment).commit();
 
         }
     };
@@ -74,7 +82,8 @@ public class ActPhotoServices_Fragment extends Fragment {
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
-    public ActPhotoServices_Fragment() {
+
+    public ActPhotoProduction_Fragment() {
         // Required empty public constructor
     }
 
@@ -84,11 +93,11 @@ public class ActPhotoServices_Fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ActPhotoServices_Fragment.
+     * @return A new instance of fragment ActPhotoProduction_Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ActPhotoServices_Fragment newInstance(String param1, String param2) {
-        ActPhotoServices_Fragment fragment = new ActPhotoServices_Fragment();
+    public static ActPhotoProduction_Fragment newInstance(String param1, String param2) {
+        ActPhotoProduction_Fragment fragment = new ActPhotoProduction_Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -109,7 +118,7 @@ public class ActPhotoServices_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.actphotoservices_fragment, container, false);
+        return inflater.inflate(R.layout.actphotoproduction_fragment, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -118,21 +127,18 @@ public class ActPhotoServices_Fragment extends Fragment {
             mListener.onFragmentInteraction(uri);
         }
     }
-
-
-
-    /*
-        @Override
-        public void onAttach(Context context) {
-            super.onAttach(context);
-            if (context instanceof OnFragmentInteractionListener) {
-                mListener = (OnFragmentInteractionListener) context;
-            } else {
-                throw new RuntimeException(context.toString()
-                        + " must implement OnFragmentInteractionListener");
-            }
+/*
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) context;
+        } else {
+            throw new RuntimeException(context.toString()
+                    + " must implement OnFragmentInteractionListener");
         }
-    */
+    }
+*/
     @Override
     public void onDetach() {
         super.onDetach();
@@ -173,7 +179,6 @@ public class ActPhotoServices_Fragment extends Fragment {
         btnList.setOnClickListener(btnList_click);
         ///////////////////////////////////////////////////////////////
     }
-
     Button btnFirst;
     Button btnNext;
     Button btnPrevious;

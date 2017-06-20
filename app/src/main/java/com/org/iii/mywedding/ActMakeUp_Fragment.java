@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +35,9 @@ public class ActMakeUp_Fragment extends Fragment {
     private View.OnClickListener btnFirst_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            Fragment actphotoservices_frgament = new ActPhotoServices_Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,actphotoservices_frgament).commit();
 
         }
     };
@@ -41,6 +45,9 @@ public class ActMakeUp_Fragment extends Fragment {
     private View.OnClickListener btnNext_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            Fragment act_photo_production_fragment = new Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,act_photo_production_fragment).commit();
 
         }
     };
@@ -48,6 +55,9 @@ public class ActMakeUp_Fragment extends Fragment {
     private View.OnClickListener btnPrevious_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            Fragment actphotoservices_frgament = new ActPhotoServices_Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,actphotoservices_frgament).commit();
 
         }
     };
@@ -59,9 +69,12 @@ public class ActMakeUp_Fragment extends Fragment {
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
-    private View.OnClickListener btnHome_click = new View.OnClickListener() {
+    private View.OnClickListener btnList_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            Fragment act_wedding_photo_fragment = new ActMakeUp_Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,act_wedding_photo_fragment).commit();
 
         }
     };
@@ -159,13 +172,13 @@ public class ActMakeUp_Fragment extends Fragment {
         btnLast = (Button) getActivity().findViewById(R.id.btnLast);
         btnLast.setOnClickListener(btnLast_click);
         ///////////////////////////////////////////////////////////////
-        btnHome = (Button) getActivity().findViewById(R.id.btnHome);
-        btnHome.setOnClickListener(btnHome_click);
+        btnList = (Button) getActivity().findViewById(R.id.btnList);
+        btnList.setOnClickListener(btnList_click);
         ///////////////////////////////////////////////////////////////
     }
     Button btnFirst;
     Button btnNext;
     Button btnPrevious;
     Button btnLast;
-    Button btnHome;
+    Button btnList;
 }
