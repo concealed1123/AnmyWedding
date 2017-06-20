@@ -9,17 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActLogin">
+        <activity android:name=".ActNavi"
+            android:label="@string/title_activity_act_navi"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ActNavi"
-            android:label="@string/title_activity_act_navi"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".ActMain" />
         <activity android:name=".StackMain" />
         <activity

@@ -32,6 +32,7 @@ public class ActManual_Fragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    /////////////////////////////////////////////////////////////////////////////////////////
     private View.OnClickListener ImgBtnWeddingPhoto_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -41,6 +42,7 @@ public class ActManual_Fragment extends Fragment {
             manager.beginTransaction().replace(R.id.Manual_main,actWeddingPhoto_fragment).commit();
         }
     };
+    /////////////////////////////////////////////////////////////////////////////////////////
     private View.OnClickListener ImgBtnWeddingRec_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -53,12 +55,14 @@ public class ActManual_Fragment extends Fragment {
 
         }
     };
+    /////////////////////////////////////////////////////////////////////////////////////////
     private View.OnClickListener ImgBtnWeddingPlace_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 
         }
     };
+    /////////////////////////////////////////////////////////////////////////////////////////
 
 
     public ActManual_Fragment() {

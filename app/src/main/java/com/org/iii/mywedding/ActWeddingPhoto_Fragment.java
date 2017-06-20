@@ -3,15 +3,21 @@ package com.org.iii.mywedding;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.view.menu.ActionMenuItemView;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 
 /**
@@ -23,8 +29,12 @@ import android.widget.ListView;
  * create an instance of this fragment.
  */
 public class ActWeddingPhoto_Fragment extends Fragment {
+    ListView listview;
     String[] PhotoNotice = {"攝影服務","化妝造型","攝影產品",
             "贈品&出借物品","挑片&美編","禮服選擇&出借","付款"};
+    ArrayAdapter<String> adap;
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -61,6 +71,7 @@ public class ActWeddingPhoto_Fragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -68,16 +79,16 @@ public class ActWeddingPhoto_Fragment extends Fragment {
 
     }
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.actweddingphoto_fragment, container, false);
         View view = inflater.inflate(R.layout.actweddingphoto_fragment, container, false);
-        ListView listview =(ListView)view.findViewById(R.id.myListView);
-        String[] PhotoNotice = {"攝影服務","化妝造型","攝影產品",
-                "贈品&出借物品","挑片&美編","禮服選擇&出借","付款"};
-        ArrayAdapter<String> adap = new ArrayAdapter<String>(
+        listview =(ListView)view.findViewById(R.id.myListView);
+        adap = new ArrayAdapter<String>(
                         getActivity(),
                         android.R.layout.simple_list_item_1,
                         PhotoNotice);
@@ -85,6 +96,36 @@ public class ActWeddingPhoto_Fragment extends Fragment {
 
         return view;
 
+    }
+
+
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long rowId) {
+
+                if (position == 0){
+                    Fragment actphotoservices_frgament = new ActPhotoServices_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,actphotoservices_frgament).commit();
+                    Toast.makeText(getContext(),"你選了"+PhotoNotice[position],Toast.LENGTH_SHORT).show();
+                }
+
+                else if(position == 1){
+                    Fragment actmakeup_fragment = new ActMakeUp_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,actmakeup_fragment).commit();
+                    Toast.makeText(getContext(),"你選了"+PhotoNotice[position],Toast.LENGTH_SHORT).show();
+
+                }
+
+
+            }
+        });
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -126,70 +167,6 @@ public class ActWeddingPhoto_Fragment extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
-    /*private ListView.OnItemClickListener listener = new ListView.OnItemClickListener(){
-
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-            if(position == 0){
-                ActPhotoServices_Fragment actphotoservices_fragment = new ActPhotoServices_Fragment();
-                FragmentManager manager = getFragmentManager();
-                manager.beginTransaction().replace(R.id.wedding_photo,actphotoservices_fragment).commit();
-
-            }
-            else if(position == 1){
 
 
-            }
-            else if(position == 2){
-
-            }
-            else if(position == 3){
-
-            }
-            else if(position == 4){
-
-            }
-            else if(position == 5){
-
-            }
-
-
-        }
-    };*/
-    ListView.OnItemSelectedListener listener = new ListView.OnItemSelectedListener(){
-
-        @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-
-            if(position == 0){
-                ActPhotoServices_Fragment actphotoservices_fragment = new ActPhotoServices_Fragment();
-                FragmentManager manager = getFragmentManager();
-                manager.beginTransaction().replace(R.id.wedding_photo,actphotoservices_fragment).commit();
-
-            }
-            else if(position == 1){
-
-
-            }
-            else if(position == 2){
-
-            }
-            else if(position == 3){
-
-            }
-            else if(position == 4){
-
-            }
-            else if(position == 5){
-
-            }
-
-        }
-
-        @Override
-        public void onNothingSelected(AdapterView<?> parent) {
-
-        }
-    };
 }
