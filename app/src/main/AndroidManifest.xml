@@ -25,16 +25,7 @@
             android:name=".ActTab"
             android:label="@string/title_activity_act_tab"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ActManual" />
         <activity android:name=".ActWhiptheGroom" />
-        <activity android:name=".ActWeddingPhoto" />
-        <activity android:name=".ActPhotoServices" />
-        <activity android:name=".ActMakeUp" />
-        <activity android:name=".ActPhotoProduction" />
-        <activity android:name=".ActGiftandLendThings" />
-        <activity android:name=".ActPickphotoandArtedit" />
-        <activity android:name=".ActChooseDressandBorrow" />
-        <activity android:name=".ActPayment"></activity>
     </application>
 
 </manifest>
