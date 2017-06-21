@@ -47,7 +47,7 @@ public class ActPhotoProduction_Fragment extends Fragment {
     private View.OnClickListener btnNext_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Fragment act_gift_and_lend_Things_fragment = new Fragment();
+            Fragment act_gift_and_lend_Things_fragment = new ActGiftandLendThings_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_gift_and_lend_Things_fragment).commit();
 
@@ -68,6 +68,9 @@ public class ActPhotoProduction_Fragment extends Fragment {
     private View.OnClickListener btnLast_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            Fragment act_payment_fragment = new ActPayment_Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,act_payment_fragment).commit();
 
         }
     };
@@ -75,7 +78,7 @@ public class ActPhotoProduction_Fragment extends Fragment {
     private View.OnClickListener btnList_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Fragment act_wedding_photo_fragment = new ActMakeUp_Fragment();
+            Fragment act_wedding_photo_fragment = new ActWeddingPhoto_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_wedding_photo_fragment).commit();
 

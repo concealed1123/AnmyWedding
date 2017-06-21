@@ -15,12 +15,12 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ActMakeUp_Fragment.OnFragmentInteractionListener} interface
+ * {@link ActChooseDressandBorrow_Fragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link ActMakeUp_Fragment#newInstance} factory method to
+ * Use the {@link ActChooseDressandBorrow_Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ActMakeUp_Fragment extends Fragment {
+public class ActChooseDressandBorrow_Fragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -45,9 +45,10 @@ public class ActMakeUp_Fragment extends Fragment {
     private View.OnClickListener btnNext_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Fragment act_photo_production_fragment = new ActPhotoProduction_Fragment();
+            Fragment act_payment_fragment = new ActPayment_Fragment();
             FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,act_photo_production_fragment).commit();
+            manager.beginTransaction().replace(R.id.fragment_main,act_payment_fragment).commit();
+
 
         }
     };
@@ -55,9 +56,10 @@ public class ActMakeUp_Fragment extends Fragment {
     private View.OnClickListener btnPrevious_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Fragment actphotoservices_frgament = new ActPhotoServices_Fragment();
+            Fragment act_pickphoto_and_artedit_fragment = new ActPickphotoandArtedit_Fragment();
             FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,actphotoservices_frgament).commit();
+            manager.beginTransaction().replace(R.id.fragment_main,act_pickphoto_and_artedit_fragment).commit();
+
 
         }
     };
@@ -82,7 +84,8 @@ public class ActMakeUp_Fragment extends Fragment {
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
-    public ActMakeUp_Fragment() {
+
+    public ActChooseDressandBorrow_Fragment() {
         // Required empty public constructor
     }
 
@@ -92,11 +95,11 @@ public class ActMakeUp_Fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ActMakeUp_Fragment.
+     * @return A new instance of fragment ActChooseDressandBorrow_Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ActMakeUp_Fragment newInstance(String param1, String param2) {
-        ActMakeUp_Fragment fragment = new ActMakeUp_Fragment();
+    public static ActChooseDressandBorrow_Fragment newInstance(String param1, String param2) {
+        ActChooseDressandBorrow_Fragment fragment = new ActChooseDressandBorrow_Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -117,7 +120,7 @@ public class ActMakeUp_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.actmakeup_fragment, container, false);
+        return inflater.inflate(R.layout.actchoosedressandborrow_fragment, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -158,7 +161,6 @@ public class ActMakeUp_Fragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);

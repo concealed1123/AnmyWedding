@@ -124,30 +124,38 @@ public class ActWeddingPhoto_Fragment extends Fragment {
                 }
 
                 else if(position == 2){
-                    Fragment act_photo_production_fragment = new Fragment();
+                    Fragment act_photo_production_fragment = new ActPhotoProduction_Fragment();
                     FragmentManager manager = getFragmentManager();
                     manager.beginTransaction().replace(R.id.fragment_main,act_photo_production_fragment).commit();
                     Toast.makeText(getContext(),"你選了"+PhotoNotice[position],Toast.LENGTH_SHORT).show();
 
                 }
                 else if(position == 3){
-                    Fragment act_gift_and_lend_Things_fragment = new Fragment();
+                    Fragment act_gift_and_lend_Things_fragment = new ActGiftandLendThings_Fragment();
                     FragmentManager manager = getFragmentManager();
                     manager.beginTransaction().replace(R.id.fragment_main,act_gift_and_lend_Things_fragment).commit();
                     Toast.makeText(getContext(),"你選了"+PhotoNotice[position],Toast.LENGTH_SHORT).show();
 
                 }
                 else if(position == 4){
-                    Fragment act_pickphoto_and_artedit_fragment = new Fragment();
+                    Fragment act_pickphoto_and_artedit_fragment = new ActPickphotoandArtedit_Fragment();
                     FragmentManager manager = getFragmentManager();
                     manager.beginTransaction().replace(R.id.fragment_main,act_pickphoto_and_artedit_fragment).commit();
                     Toast.makeText(getContext(),"你選了"+PhotoNotice[position],Toast.LENGTH_SHORT).show();
 
                 }
                 else if(position == 5){
+                    Fragment act_choosedress_and_borrow_fragment = new ActChooseDressandBorrow_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,act_choosedress_and_borrow_fragment).commit();
+                    Toast.makeText(getContext(),"你選了"+PhotoNotice[position],Toast.LENGTH_SHORT).show();
 
                 }
                 else{
+                    Fragment act_payment_fragment = new ActPayment_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,act_payment_fragment).commit();
+                    Toast.makeText(getContext(),"你選了"+PhotoNotice[position],Toast.LENGTH_SHORT).show();
 
                 }
 
