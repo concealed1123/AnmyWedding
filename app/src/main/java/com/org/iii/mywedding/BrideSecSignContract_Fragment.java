@@ -15,12 +15,12 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link FindBrideSecEarly_Fragment.OnFragmentInteractionListener} interface
+ * {@link BrideSecSignContract_Fragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link FindBrideSecEarly_Fragment#newInstance} factory method to
+ * Use the {@link BrideSecSignContract_Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FindBrideSecEarly_Fragment extends Fragment {
+public class BrideSecSignContract_Fragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -46,20 +46,18 @@ public class FindBrideSecEarly_Fragment extends Fragment {
     private View.OnClickListener btnNext_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Fragment bridesec_collection_fragment = new BrideSecCollection_Fragment();
+            Fragment bridesec_keymaintain_fragment = new  BrideSecKeyMaintain_Fragment();
             FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,bridesec_collection_fragment).commit();
-
-
+            manager.beginTransaction().replace(R.id.fragment_main,bridesec_keymaintain_fragment).commit();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
     private View.OnClickListener btnPrevious_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Fragment findbridesecearly_fragment = new FindBrideSecEarly_Fragment();
+            Fragment bridesec_trymakeup_fragment = new BrideSecTryMakeUp_Fragment();
             FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,findbridesecearly_fragment).commit();
+            manager.beginTransaction().replace(R.id.fragment_main,bridesec_trymakeup_fragment).commit();
 
 
         }
@@ -85,7 +83,7 @@ public class FindBrideSecEarly_Fragment extends Fragment {
     };
     ///////////////////////////////////////////////////////////////////////////////
 
-    public FindBrideSecEarly_Fragment() {
+    public BrideSecSignContract_Fragment() {
         // Required empty public constructor
     }
 
@@ -95,11 +93,11 @@ public class FindBrideSecEarly_Fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FindBrideSecEarly_Fragment.
+     * @return A new instance of fragment BrideSecSignContract_Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static FindBrideSecEarly_Fragment newInstance(String param1, String param2) {
-        FindBrideSecEarly_Fragment fragment = new FindBrideSecEarly_Fragment();
+    public static BrideSecSignContract_Fragment newInstance(String param1, String param2) {
+        BrideSecSignContract_Fragment fragment = new BrideSecSignContract_Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -120,7 +118,7 @@ public class FindBrideSecEarly_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.findbridesecearly_fragment, container, false);
+        return inflater.inflate(R.layout.bridesecsigncontract_fragment, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

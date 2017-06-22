@@ -37,7 +37,7 @@ public class ActBrideSec_Fragment extends Fragment {
 
     ListView listview2;
     String[] BrideSecNotice = {"找新秘趁早","新秘的作品透露了...？","看新秘評價避免踩雷",
-            "新祕的報價能提供哪些服務","造型溝通要充分","試個妝不後悔","簽約時，需注意的事項",
+            "新祕的報價能提供哪些服務","造型溝通要充分","試個妝不後悔","簽約注意的事項",
             "保養之2大關鍵重點","婚禮前一天準備工作","造型當天的注意事項"};
     ArrayAdapter<String> adap2;
 
@@ -165,28 +165,37 @@ public class ActBrideSec_Fragment extends Fragment {
                     FragmentManager manager = getFragmentManager();
                     manager.beginTransaction().replace(R.id.fragment_main,bridesec_enough_communicate_fragment).commit();
                     Toast.makeText(getContext(),"你選了"+BrideSecNotice[position],Toast.LENGTH_SHORT).show();
-
                 }
                 else if(position == 5){
-
-
+                    Fragment bridesec_trymakeup_fragment = new BrideSecTryMakeUp_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,bridesec_trymakeup_fragment).commit();
+                    Toast.makeText(getContext(),"你選了"+BrideSecNotice[position],Toast.LENGTH_SHORT).show();
                 }
                 else if(position == 6){
-
-
+                    Fragment bridesec_signcontract_fragment = new  BrideSecSignContract_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,bridesec_signcontract_fragment).commit();
+                    Toast.makeText(getContext(),"你選了"+BrideSecNotice[position],Toast.LENGTH_SHORT).show();
                 }
                 else if(position == 7){
-
+                    Fragment bridesec_keymaintain_fragment = new  BrideSecKeyMaintain_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,bridesec_keymaintain_fragment).commit();
+                    Toast.makeText(getContext(),"你選了"+BrideSecNotice[position],Toast.LENGTH_SHORT).show();
                 }
                 else if(position == 8){
-
+                    Fragment bridesec_daybeforewedding_fragment = new  BrideSecDayBeforeWedding_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,bridesec_daybeforewedding_fragment).commit();
+                    Toast.makeText(getContext(),"你選了"+BrideSecNotice[position],Toast.LENGTH_SHORT).show();
                 }
                 else if(position == 9){
-
+                    Fragment bridesec_ondaynotice_fragment = new  BrideSecOnDayNotice_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,bridesec_ondaynotice_fragment).commit();
+                    Toast.makeText(getContext(),"你選了"+BrideSecNotice[position],Toast.LENGTH_SHORT).show();
                 }
-
-
-
             }
         });
     }

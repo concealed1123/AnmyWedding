@@ -1,0 +1,36 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.org.iii.mywedding.ActWeddingPlace_Fragment">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(1)日子要先選出來：\n不知道婚宴的日期，就無法查詢飯店當天是否已被下訂，雖然沒有日期不見得不能參觀要先算出日子比較好，先看好再算日子的話，有可能中途被訂走，或者算出日子發現當日已被預約的情形。\n\n
+(2)雙方的需求：\n因為兩人的家庭生活背景不同，對於宴客的要求、認知可能差異很大，如有的家庭重視熱鬧、大家同樂給予新人祝福，所以席開數十上百桌，把親朋好友都請來同樂，這種就比較適合婚宴會館或大型餐廳、辦桌；而有的家庭重視品質和溫馨，婚宴習慣上只宴請至親好友，桌數在10桌以下，其他人只發餅，所以在場地考慮上偏向有名的大飯店。\n\n
+(3)預算：\n所謂有多少錢、做多少事，雖然大家都知道禮金會回收一點，但是禮金應該屬於「意外之財」，沒有人能確切知道當天能收到多少禮金，所以地點和菜色選擇上，仍應以能力可支付的範圍為作考量。\n\n
+(4)人數與桌數：\n預估人數和桌數的準確度和婚期遠近息息相關，拿捏上不太容易。親戚方面數目是容易確定的。朋友、同學和同事難估算，會不會出席？會不會攜伴？如果婚宴在好日子，會遇到一天同時有兩三場要擇一的情形，變數很多。估算上以一定會出席的親戚朋友為主，不確定可大概估算，向飯店詢問如果爆桌時的處理方法以及桌數不足時寄桌的規定。\n\n
+(5)場地：\n除了預算內的口袋名單外，加入一些超出預算的飯店在參觀名單內，多看看可瞭解，這家飯店這麼貴，是為什麼？是菜色好、還是裝潢佳？還是有什麼特殊之處？有時候五星級大飯店其實沒有想像中的貴，婚宴會館也有高檔的專案，可以相互比較，在下訂時，也比較知道要跟飯店要求什麼或加強什麼。\n\n
+(6)預約參觀：\n農曆七月宴會廳比較空，隨時可以去參觀而事實上，每一家飯店都還是蠻忙的，同時都有其他人在諮詢。沒有預約的優點是，小姐沒時間推銷你有的沒的，看完場地簡單講解完專案重要內容就解散，一間飯店花不到半小時，效率超高！\n\n
+(7)何時開始參觀：\n愈早愈好，假如婚期在明年10月，家長都覺得飯店怎麼可能難找？事實上，在參訪過程中已經有幾家被下訂或保留了，想要找CP值高又完全符合自己需求的真的不容易，手腳比較快的就是贏家！\n\n"
+
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

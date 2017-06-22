@@ -67,10 +67,9 @@ public class BrideSecCollection_Fragment extends Fragment {
     private View.OnClickListener btnLast_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            /*Fragment act_payment_fragment = new ActPayment_Fragment();
+            Fragment bridesec_ondaynotice_fragment = new  BrideSecOnDayNotice_Fragment();
             FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,act_payment_fragment).commit();
-            */
+            manager.beginTransaction().replace(R.id.fragment_main,bridesec_ondaynotice_fragment).commit();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////

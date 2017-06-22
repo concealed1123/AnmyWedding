@@ -46,6 +46,9 @@ public class ActManual_Fragment extends Fragment {
     private View.OnClickListener ImgBtnWeddingRec_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            ActWeddingRec_Fragment actweddingrec_fragment = new ActWeddingRec_Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,actweddingrec_fragment).commit();
 
 
         }
@@ -63,7 +66,9 @@ public class ActManual_Fragment extends Fragment {
     private View.OnClickListener ImgBtnWeddingPlace_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            ActWeddingPlace_Fragment act_weddingplace_fragment = new ActWeddingPlace_Fragment();
+            FragmentManager manager = getFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,act_weddingplace_fragment).commit();
         }
     };
     /////////////////////////////////////////////////////////////////////////////////////////

@@ -45,10 +45,9 @@ public class BrideSecEnoughCommunicate_Fragment extends Fragment {
     private View.OnClickListener btnNext_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            /*Fragment bridesec_priceprovide_services_fragment = new BrideSecPriceProvideServices_Fragment();
+            Fragment bridesec_trymakeup_fragment = new BrideSecTryMakeUp_Fragment();
             FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,bridesec_priceprovide_services_fragment).commit();
-            */
+            manager.beginTransaction().replace(R.id.fragment_main,bridesec_trymakeup_fragment).commit();
 
         }
     };
@@ -67,10 +66,9 @@ public class BrideSecEnoughCommunicate_Fragment extends Fragment {
     private View.OnClickListener btnLast_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            /*Fragment act_payment_fragment = new ActPayment_Fragment();
+            Fragment bridesec_ondaynotice_fragment = new  BrideSecOnDayNotice_Fragment();
             FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,act_payment_fragment).commit();
-            */
+            manager.beginTransaction().replace(R.id.fragment_main,bridesec_ondaynotice_fragment).commit();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////

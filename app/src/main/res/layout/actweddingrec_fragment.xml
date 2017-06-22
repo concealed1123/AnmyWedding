@@ -1,0 +1,37 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.org.iii.mywedding.ActWeddingRec_Fragment">
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(1)婚禮紀錄攝影師必須熟悉婚禮流程。以免婚禮當天還要拉著攝影師到處跑。\n\n\n
+(2)拍攝前要充分和新人溝通。才能夠拍出新人們期望的照片。\n\n\n
+(3)是否有專業的攝影器材及技術。 鏡頭、快門、光圈、曝光這些技術與器材等都是很重要的。\n\n\n\n
+(4)可以多看攝影師的作品,了解每個攝影師的攝影風格,和自己的喜好來選擇。\n\n\n\n
+(5)是否有簽訂合約，並詳細記載服務內容(包括時數和日期)， 和收費明細表。\n\n\n\n
+(6)注意攝影師的檔期。萬一找到的攝影師是必須趕場的，一定要注意是否能夠配合婚禮時間。\n\n\n\n
+(7)若親友裡面有人願意擔任攝影師，較能仔細溝通，只是攝影技術和婚禮當天流程方面必須掌控好。\n\n\n\n"
+
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
