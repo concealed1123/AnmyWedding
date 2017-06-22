@@ -8,11 +8,24 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="造型溝通要充分"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="從溝通觀察一個新祕的服務經驗、服務熱忱與態度在聊天過程中，新祕是否有提供專業的意見與回覆（而不是一昧的稱讚）而態度是否夠友善且積極，雙方是否有同樣共識。\n
+造型溝通時，應該準備哪些東西？可以給出我們FB相簿連結或是多張近期生活照和全身照千萬不要給那種3年前的久遠老照片。記住這是要化妝，不是要相親好嗎？\n
+準備喜歡的新娘造型做為範本一定要讓造型師瞭解你的需求和喜好！！才能期待新秘為你作出完美造型，讓所有嘉賓驚豔。為了減少誤差，和新秘溝通時，最好是「有圖有真相」。"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

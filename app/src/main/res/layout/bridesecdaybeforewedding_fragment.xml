@@ -8,11 +8,28 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="婚禮前一天準備工作"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(1)禮服記得拿出來掛好，才不會有醜醜皺褶。\n
+(2)睡前敷個保濕面膜，讓明天更容易上妝。\n
+(3)睡前塗上護脣膏保持水潤。\n
+(4)睡前少喝水這樣不僅可減少入睡後起來如廁的頻率，增加睡眠品質也可降低水腫的風險。晚上也不要吃太鹹，水腫是大忌。\n
+(5)前一天早點睡，婚禮就是馬拉松，早睡才會有好體力好氣色。\n
+(6)前一晚不要穿內衣睡覺，以免有內衣勒痕。\n
+(7)腋毛要記得刮除！\n"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

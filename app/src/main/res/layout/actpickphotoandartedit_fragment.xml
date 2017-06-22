@@ -6,13 +6,20 @@
     android:layout_height="match_parent"
     tools:context="com.org.iii.mywedding.ActPickphotoandArtedit_Fragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="挑片與美編"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(1)在該婚紗店挑片是否可以不受外力因素干擾？\n
+(2)對照片不滿意是否可以重拍？\n
+(3)該婚紗店是否提供美編服務？如何收費？\n
+(4)不滿意可否重修或重做？\n"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

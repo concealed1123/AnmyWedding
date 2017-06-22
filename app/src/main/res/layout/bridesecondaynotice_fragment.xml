@@ -8,11 +8,25 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="造型當天的注意事項"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(1)至少準備半身大的鏡子和半身高的椅子（宴客場所和化妝地點都要）我們就別為難造型師了，巧婦難為無米之炊。\n
+(2)隱形眼鏡再上妝前先戴好！如果你不想當血輪眼的新娘子或是當天體驗視盲情境的女孩，練好戴隱形眼鏡。\n
+(3)化妝前請穿前開式上衣，以免禮服把妝弄花。\n
+(4)冷氣空調的溫度保持涼爽。上的妝才不易因為太熱而花掉。"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

@@ -5,14 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.org.iii.mywedding.FindBrideSecEarly_Fragment">
-
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="找新秘趁早"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="根據內政部統計，5月20日這天全台灣就有4766對新人登記結婚。更不用提結婚訂婚的大日子！\n
+除了要配合彼此的生辰八字時間外，還要挑個吉時宜嫁娶的好日子，而現代大多人無法請假，所以在時間安排上會盡量挑選假日。\n
+在熱門時間，新秘平均在半年前檔期就會被預口碑好、技術好、資歷深的造型師甚至在半年前到一年檔期就滿了找新秘，千萬要趁早。"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

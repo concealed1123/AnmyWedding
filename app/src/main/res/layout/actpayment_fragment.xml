@@ -6,13 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.org.iii.mywedding.ActPayment_Fragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="付款"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(1)需付多少訂金？可否刷卡？何時付清尾款？\n
+(2)若下訂後不想拍了，該婚紗店可否將訂金全額退還？\n
+(3)有額外收費，要請該婚紗店提前告知！\n"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

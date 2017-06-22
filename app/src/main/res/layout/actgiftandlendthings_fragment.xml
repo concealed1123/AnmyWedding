@@ -6,13 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.org.iii.mywedding.ActGiftandLendThings_Fragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="贈品與出借物品"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(1)該婚紗店可否贈送拍攝全家福？\n
+(2)謝卡、親友卡、相片喜帖、桌卡新娘捧花、禮金簿、結婚證書等該婚紗店是否都會贈送？\n
+(3)該婚紗店是夠外借訂結婚禮服的成套飾品？\n"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

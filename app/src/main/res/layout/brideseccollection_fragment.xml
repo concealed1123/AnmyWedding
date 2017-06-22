@@ -8,11 +8,25 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="新秘的作品透露了...?"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(1)造型是否多樣：\n若造型師整本作品集裡，同樣髮型不斷出現n 次，雖然美歸美，而且不是同一個髮型都適合每個人的臉。\n
+(2)不同外型展現造型師的功力：\n每個女孩身材、臉型、髮質都不同，而這些不同外型的新娘在同一位新秘的巧手下是否都仍有亮麗的水準？準新娘們可以從作品集裡觀察造型師整體的相簿水平外，也可以去找和自己相似特徵的新娘妝容喔！\n
+(3)妝感：每位造型師擅長的風格和拿手技巧也不同，妝感淡濃拿捏也有所差異。有些新秘較注重眼妝的呈現，有些新秘偏好裸妝的清新在妝感上也是一大考量因素喔！\n
+(4)更新作品的時間與頻率：\n從上傳新娘造型作品的時間去判斷新祕資歷與熱門度是個好方式但是資深一定好，新手一定差嗎？那倒未必如此。準新娘們可以從作品的服務時間與更新頻率去觀察，近期這個新祕是不是有持續的接案？在市場上的熱門度是否持續？"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

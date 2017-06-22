@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     tools:context="com.org.iii.mywedding.ActChooseDressandBorrow_Fragment">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="禮服選擇與出借"
-        android:textSize="40dp"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="(1)該婚紗店拍照、訂結婚禮服是否全區可選？VIP禮服怎樣收費？禮服可否先試穿？試穿時可否拍照？\n
+(2)何時選禮服？禮服如需修改多久能完成？\n
+(3)婚紗店引進新款禮服是否會通知來試穿？\n
+(4)選定禮服後可否更換？更換是否加價？\n
+(5)該婚紗店訂結婚禮服提供幾套？是否提供伴娘服、花童服？\n
+(6)訂結婚禮服何時取？何時還？\n
+(7)選定禮服在取件前有污損，該婚紗店如何處理？\n\n"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+    </ScrollView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
