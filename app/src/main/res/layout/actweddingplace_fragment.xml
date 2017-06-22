@@ -18,6 +18,7 @@
 
             <TextView
                 android:id="@+id/textView2"
+                android:textColor="#444444"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="(1)日子要先選出來：\n不知道婚宴的日期，就無法查詢飯店當天是否已被下訂，雖然沒有日期不見得不能參觀要先算出日子比較好，先看好再算日子的話，有可能中途被訂走，或者算出日子發現當日已被預約的情形。\n\n
@@ -28,7 +29,7 @@
 (6)預約參觀：\n農曆七月宴會廳比較空，隨時可以去參觀而事實上，每一家飯店都還是蠻忙的，同時都有其他人在諮詢。沒有預約的優點是，小姐沒時間推銷你有的沒的，看完場地簡單講解完專案重要內容就解散，一間飯店花不到半小時，效率超高！\n\n
 (7)何時開始參觀：\n愈早愈好，假如婚期在明年10月，家長都覺得飯店怎麼可能難找？事實上，在參訪過程中已經有幾家被下訂或保留了，想要找CP值高又完全符合自己需求的真的不容易，手腳比較快的就是贏家！\n\n"
 
-                android:textSize="20dp" />
+                android:textSize="25dp" />
 
         </LinearLayout>
     </ScrollView>

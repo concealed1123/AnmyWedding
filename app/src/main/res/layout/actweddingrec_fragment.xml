@@ -19,6 +19,7 @@
 
             <TextView
                 android:id="@+id/textView2"
+                android:textColor="#444444"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="(1)婚禮紀錄攝影師必須熟悉婚禮流程。以免婚禮當天還要拉著攝影師到處跑。\n\n\n
