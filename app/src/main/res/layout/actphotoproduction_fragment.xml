@@ -5,19 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.org.iii.mywedding.ActPhotoProduction_Fragment">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
         <TextView
+            android:textColor="#444444"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="(1)所選基本組數、相簿尺寸、相簿種類\n
-(2)加挑照片如何計價？\n
-(3)是否贈送毛片、底片？如果該婚紗店不送，另外購買多少錢？\n
-(4)放大照尺寸、是否含框？不滿意是否可以重做？\n
-(5)相簿、娘家本等如何排版？是否含美編？\n"
+            android:text=" (1)所選基本組數、相簿尺寸、相簿種類\n\n
+(2)加挑照片如何計價？\n\n
+(3)是否贈送毛片、底片？如果該婚紗店不送，另外購買多少錢？\n\n
+(4)放大照尺寸、是否含框？不滿意是否可以重做？\n\n
+(5)相簿、娘家本等如何排版？是否含美編？\n\n"
             android:textSize="20dp"
             android:layout_weight="1"/>
 

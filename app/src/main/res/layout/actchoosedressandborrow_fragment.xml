@@ -11,14 +11,15 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
         <TextView
+            android:textColor="#444444"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="(1)該婚紗店拍照、訂結婚禮服是否全區可選？VIP禮服怎樣收費？禮服可否先試穿？試穿時可否拍照？\n
-(2)何時選禮服？禮服如需修改多久能完成？\n
-(3)婚紗店引進新款禮服是否會通知來試穿？\n
-(4)選定禮服後可否更換？更換是否加價？\n
-(5)該婚紗店訂結婚禮服提供幾套？是否提供伴娘服、花童服？\n
-(6)訂結婚禮服何時取？何時還？\n
+            android:text=" (1)該婚紗店拍照、訂結婚禮服是否全區可選？VIP禮服怎樣收費？禮服可否先試穿？試穿時可否拍照？\n\n
+(2)何時選禮服？禮服如需修改多久能完成？\n\n
+(3)婚紗店引進新款禮服是否會通知來試穿？\n\n
+(4)選定禮服後可否更換？更換是否加價？\n\n
+(5)該婚紗店訂結婚禮服提供幾套？是否提供伴娘服、花童服？\n\n
+(6)訂結婚禮服何時取？何時還？\n\n
 (7)選定禮服在取件前有污損，該婚紗店如何處理？\n\n"
             android:textSize="20dp"
             android:layout_weight="1"/>

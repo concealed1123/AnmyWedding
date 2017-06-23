@@ -18,11 +18,12 @@
         android:layout_weight="1">
 
         <TextView
+            android:textColor="#444444"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="婚前如何保養皮膚？\n千萬不要去做臉！要做的話最好是兩個禮拜前去做。\n
-新娘造型前，頭髮是否可以修剪或保養？\n剪頭髮是可以的，有層次的髮線在造型上的表現會比較多元不受限。\n
-需要去做護髮的動作嗎？\n千萬不用護髮，因為在做新娘造型時，需要較高的摩擦力去做固定和造型也就是說，新娘們可以不用特地去做護髮。"
+            android:text="Q：婚前如何保養皮膚？\n千萬不要去做臉！要做的話最好是兩個禮拜前去做。\n
+Q：新娘造型前，頭髮是否可以修剪或保養？\n剪頭髮是可以的，有層次的髮線在造型上的表現會比較多元不受限。\n
+Q：需要去做護髮的動作嗎？\n千萬不用護髮，因為在做新娘造型時，需要較高的摩擦力去做固定和造型也就是說，新娘們可以不用特地去做護髮。"
             android:textSize="20dp"
             android:layout_weight="1"/>
     </ScrollView>

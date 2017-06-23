@@ -18,6 +18,7 @@
         android:layout_weight="1">
 
         <TextView
+            android:textColor="#444444"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="A網友：\n「婚禮當天，我的假睫毛已經不能用兩片厚扇子形容了，而是隨時一眨眼，整個人都可以飛起來了…」\n

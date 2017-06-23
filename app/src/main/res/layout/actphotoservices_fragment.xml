@@ -6,19 +6,26 @@
     android:layout_height="match_parent"
     android:id="@+id/photoservices_fragment"
     tools:context="com.org.iii.mywedding.ActPhotoServices_Fragment">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_weight="1">
     <TextView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="(1)攝影師當天是否只爲一對新人服務？指定攝影師是否加價？\n
-(2)會拍攝多少組數提供選擇？\n
-(3)如何安排棚外與棚內拍攝？棚外與棚內的比例為何？\n
-(4)可拍攝哪些外拍景點？該婚紗店是否提供外景車？\n
-(5)如進入收費景點拍攝，入場費是否由該婚紗店支付？\n
-(6)拍攝外景當天，如遇下雨天，該婚紗店是否可以再另外安排？\n
+        android:layout_weight="1">
+    <TextView
+        android:textColor="#444444"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" (1)攝影師當天是否只爲一對新人服務？指定攝影師是否加價？\n\n
+(2)會拍攝多少組數提供選擇？\n\n
+(3)如何安排棚外與棚內拍攝？棚外與棚內的比例為何？\n\n
+(4)可拍攝哪些外拍景點？該婚紗店是否提供外景車？\n\n
+(5)如進入收費景點拍攝，入場費是否由該婚紗店支付？\n\n
+(6)拍攝外景當天，如遇下雨天，該婚紗店是否可以再另外安排？\n\n
 (7)該婚紗店是否允許親友同行？\n\n"
         android:textSize="20dp"
         android:layout_weight="1"/>

@@ -18,6 +18,7 @@
         android:layout_weight="1">
 
         <TextView
+            android:textColor="#444444"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="(1)至少準備半身大的鏡子和半身高的椅子（宴客場所和化妝地點都要）我們就別為難造型師了，巧婦難為無米之炊。\n
