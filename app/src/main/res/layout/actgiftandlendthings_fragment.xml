@@ -19,9 +19,9 @@
             android:textColor="#444444"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text=" (1)該婚紗店可否贈送拍攝全家福？\n\n
-(2)謝卡、親友卡、相片喜帖、桌卡新娘捧花、禮金簿、結婚證書等該婚紗店是否都會贈送？\n\n
-(3)該婚紗店是夠外借訂結婚禮服的成套飾品？\n\n"
+            android:text=" (1)該婚紗店可否贈送拍攝全家福？\n\n\n
+(2)謝卡、親友卡、相片喜帖、桌卡新娘捧花、禮金簿、結婚證書等該婚紗店是否都會贈送？\n\n\n
+(3)該婚紗店是夠外借訂結婚禮服的成套飾品？\n\n\n"
             android:textSize="20dp"
             android:layout_weight="1"/>
     </ScrollView>
