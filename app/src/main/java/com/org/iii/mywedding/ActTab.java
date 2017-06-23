@@ -153,8 +153,7 @@ public class ActTab extends AppCompatActivity {
                     return "作品";
                 case 1:
                     return "方案";
-                case 2:
-                    return "店家";
+
             }
             return null;
         }
