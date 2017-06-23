@@ -40,6 +40,7 @@ public class ActPhotoProduction_Fragment extends Fragment {
             Fragment actphotoservices_frgament = new ActPhotoServices_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,actphotoservices_frgament).commit();
+            Toast.makeText(getContext(),"你選了攝影服務注意事項",Toast.LENGTH_SHORT).show();
 
         }
     };
@@ -50,6 +51,7 @@ public class ActPhotoProduction_Fragment extends Fragment {
             Fragment act_gift_and_lend_Things_fragment = new ActGiftandLendThings_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_gift_and_lend_Things_fragment).commit();
+            Toast.makeText(getContext(),"你選了贈品與出借物品注意事項",Toast.LENGTH_SHORT).show();
 
 
         }
@@ -61,6 +63,7 @@ public class ActPhotoProduction_Fragment extends Fragment {
             Fragment actmakeup_fragment = new ActMakeUp_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,actmakeup_fragment).commit();
+            Toast.makeText(getContext(),"你選了化妝造型注意事項",Toast.LENGTH_SHORT).show();
 
         }
     };
@@ -71,6 +74,7 @@ public class ActPhotoProduction_Fragment extends Fragment {
             Fragment act_payment_fragment = new ActPayment_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_payment_fragment).commit();
+            Toast.makeText(getContext(),"你選了付費注意事項",Toast.LENGTH_SHORT).show();
 
         }
     };
@@ -81,6 +85,7 @@ public class ActPhotoProduction_Fragment extends Fragment {
             Fragment act_wedding_photo_fragment = new ActWeddingPhoto_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_wedding_photo_fragment).commit();
+            Toast.makeText(getContext(),"回拍婚紗注意事項列表",Toast.LENGTH_SHORT).show();
 
         }
     };

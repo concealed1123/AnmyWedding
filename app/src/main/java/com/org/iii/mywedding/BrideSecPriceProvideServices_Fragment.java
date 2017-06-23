@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 /**
@@ -38,6 +39,7 @@ public class BrideSecPriceProvideServices_Fragment extends Fragment {
             Fragment findbridesecearly_fragment = new FindBrideSecEarly_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,findbridesecearly_fragment).commit();
+            Toast.makeText(getContext(),"你選了找新秘趁早",Toast.LENGTH_SHORT).show();
 
         }
     };
@@ -48,6 +50,7 @@ public class BrideSecPriceProvideServices_Fragment extends Fragment {
             Fragment bridesec_enough_communicate_fragment = new BrideSecEnoughCommunicate_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,bridesec_enough_communicate_fragment).commit();
+            Toast.makeText(getContext(),"你選了造型溝通要充分",Toast.LENGTH_SHORT).show();
 
         }
     };
@@ -58,6 +61,7 @@ public class BrideSecPriceProvideServices_Fragment extends Fragment {
             Fragment bridesec_evaluation_fragment = new BrideSecEvaluation_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,bridesec_evaluation_fragment).commit();
+            Toast.makeText(getContext(),"你選了看新秘評價避免踩雷",Toast.LENGTH_SHORT).show();
 
 
         }
@@ -69,6 +73,7 @@ public class BrideSecPriceProvideServices_Fragment extends Fragment {
             Fragment bridesec_ondaynotice_fragment = new  BrideSecOnDayNotice_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,bridesec_ondaynotice_fragment).commit();
+            Toast.makeText(getContext(),"你選了造型當天的注意事項",Toast.LENGTH_SHORT).show();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
@@ -78,6 +83,7 @@ public class BrideSecPriceProvideServices_Fragment extends Fragment {
             Fragment act_bridesec_Fragment = new ActBrideSec_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_bridesec_Fragment).commit();
+            Toast.makeText(getContext(),"回選擇新秘注意事項列表",Toast.LENGTH_SHORT).show();
 
         }
     };

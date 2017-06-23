@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 /**
@@ -39,6 +40,7 @@ public class FindBrideSecEarly_Fragment extends Fragment {
             Fragment findbridesecearly_fragment = new FindBrideSecEarly_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,findbridesecearly_fragment).commit();
+            Toast.makeText(getContext(),"你選了找新秘要趁早",Toast.LENGTH_SHORT).show();
 
         }
     };
@@ -49,6 +51,7 @@ public class FindBrideSecEarly_Fragment extends Fragment {
             Fragment bridesec_collection_fragment = new BrideSecCollection_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,bridesec_collection_fragment).commit();
+            Toast.makeText(getContext(),"你選了新秘的作品透露了？",Toast.LENGTH_SHORT).show();
 
 
         }
@@ -60,7 +63,7 @@ public class FindBrideSecEarly_Fragment extends Fragment {
             Fragment findbridesecearly_fragment = new FindBrideSecEarly_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,findbridesecearly_fragment).commit();
-
+            Toast.makeText(getContext(),"你選了找新密要趁早",Toast.LENGTH_SHORT).show();
 
         }
     };
@@ -71,6 +74,7 @@ public class FindBrideSecEarly_Fragment extends Fragment {
             Fragment bridesec_ondaynotice_fragment = new  BrideSecOnDayNotice_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,bridesec_ondaynotice_fragment).commit();
+            Toast.makeText(getContext(),"你選了造型當天的注意事項",Toast.LENGTH_SHORT).show();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
@@ -80,7 +84,7 @@ public class FindBrideSecEarly_Fragment extends Fragment {
             Fragment act_bridesec_Fragment = new ActBrideSec_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_bridesec_Fragment).commit();
-
+            Toast.makeText(getContext(),"回選擇新秘注意事項列表",Toast.LENGTH_SHORT).show();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////

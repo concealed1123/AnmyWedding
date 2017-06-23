@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 /**
@@ -49,7 +50,7 @@ public class ActGiftandLendThings_Fragment extends Fragment {
             Fragment act_pickphoto_and_artedit_fragment = new ActPickphotoandArtedit_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_pickphoto_and_artedit_fragment).commit();
-
+            Toast.makeText(getContext(),"你選了挑片與美編注意事項",Toast.LENGTH_SHORT).show();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
@@ -59,7 +60,7 @@ public class ActGiftandLendThings_Fragment extends Fragment {
             Fragment act_photo_production_fragment = new ActPhotoProduction_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_photo_production_fragment).commit();
-
+            Toast.makeText(getContext(),"你選了攝影產品注意事項",Toast.LENGTH_SHORT).show();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
@@ -69,7 +70,7 @@ public class ActGiftandLendThings_Fragment extends Fragment {
             Fragment act_payment_fragment = new ActPayment_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_payment_fragment).commit();
-
+            Toast.makeText(getContext(),"你選了付費注意事項",Toast.LENGTH_SHORT).show();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////
@@ -79,7 +80,7 @@ public class ActGiftandLendThings_Fragment extends Fragment {
             Fragment act_wedding_photo_fragment = new ActWeddingPhoto_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,act_wedding_photo_fragment).commit();
-
+            Toast.makeText(getContext(),"回到拍婚紗注意事項列表",Toast.LENGTH_SHORT).show();
         }
     };
     ///////////////////////////////////////////////////////////////////////////////

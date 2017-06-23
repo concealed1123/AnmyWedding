@@ -36,9 +36,9 @@ public class ActBrideSec_Fragment extends Fragment {
     private OnFragmentInteractionListener mListener;
 
     ListView listview2;
-    String[] BrideSecNotice = {"找新秘趁早","新秘的作品透露了...？","看新秘評價避免踩雷",
+    String[] BrideSecNotice = {"找新秘趁早","新秘的作品透露了？","看新秘評價避免踩雷",
             "新祕的報價能提供哪些服務","造型溝通要充分","試個妝不後悔","簽約注意的事項",
-            "保養之2大關鍵重點","婚禮前一天準備工作","造型當天的注意事項"};
+            "保養之關鍵重點","婚禮前一天準備工作","造型當天的注意事項"};
     ArrayAdapter<String> adap2;
 
     public ActBrideSec_Fragment() {
