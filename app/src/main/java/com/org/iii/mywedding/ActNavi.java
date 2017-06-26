@@ -18,6 +18,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import java.io.IOException;
+
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
 public class ActNavi extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -30,14 +36,14 @@ public class ActNavi extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -97,9 +103,9 @@ public class ActNavi extends AppCompatActivity
             FragmentManager manager =  getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,fragmentmember).commit();
         } else if (id == R.id.nav_gallery) {
-            FragmentGallery fragmentgallery = new FragmentGallery();
+            CollectionAndSolution_Fragment collectionandsolution_fragment = new CollectionAndSolution_Fragment();
             FragmentManager manager =  getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,fragmentgallery).commit();
+            manager.beginTransaction().replace(R.id.fragment_main,collectionandsolution_fragment).commit();
 
         } else if (id == R.id.nav_slideshow) {
             startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActWhiptheGroom.class));
@@ -109,6 +115,8 @@ public class ActNavi extends AppCompatActivity
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,actManual_fragment).commit();
         } else if (id == R.id.nav_share) {
+
+
 
         } else if (id == R.id.nav_send) {
 

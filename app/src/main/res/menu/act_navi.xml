@@ -13,7 +13,6 @@
     <item
         android:id="@+id/action_settings2"
         android:orderInCategory="100"
-        android:title="MVP"
-        app:showAsAction="never" />
+        android:title="MVP" />
 
 </menu>
