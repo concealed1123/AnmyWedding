@@ -1,5 +1,5 @@
 <LinearLayout
-    android:background="#5045"
+
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,7 +16,7 @@
             android:layout_height="240dp">
 
             <ImageButton
-                android:id="@+id/btnService1"
+                android:id="@+id/btnSolution1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -25,7 +25,7 @@
                 android:src="@drawable/test1" />
 
             <ImageButton
-                android:id="@+id/btnService2"
+                android:id="@+id/btnSolution2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -46,7 +46,7 @@
                 android:layout_weight="1"
                 android:clickable="false"
                 android:gravity="center"
-                android:text="拍婚紗"></TextView>
+                android:text="拍婚紗方案"></TextView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
                 android:layout_weight="1"
                 android:clickable="false"
                 android:gravity="center"
-                android:text="婚禮攝影"></TextView>
+                android:text="婚禮攝影方案"></TextView>
         </LinearLayout>
     </LinearLayout>
 
@@ -71,7 +71,7 @@
             android:layout_weight="0.54">
 
             <ImageButton
-                android:id="@+id/btnService3"
+                android:id="@+id/btnSolution3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -80,7 +80,7 @@
                 android:src="@drawable/makeup" />
 
             <ImageButton
-                android:id="@+id/btnService4"
+                android:id="@+id/btnSolution4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="false"
-                android:text="新娘秘書"></TextView>
+                android:text="新娘秘書方案"></TextView>
 
             <TextView
                 android:gravity="center"
@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="false"
-                android:text="婚宴場地"
+                android:text="婚宴場地方案"
                 android:layout_weight="1"></TextView>
         </LinearLayout>
     </LinearLayout>

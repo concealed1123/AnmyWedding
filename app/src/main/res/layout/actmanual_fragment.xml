@@ -1,5 +1,5 @@
 <LinearLayout
-    android:background="#FFB7DD"
+
     android:orientation="vertical"
     android:id="@+id/Manual_main"
     android:layout_width="match_parent"

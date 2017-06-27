@@ -10,6 +10,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -20,6 +28,7 @@ import android.widget.ImageButton;
  * create an instance of this fragment.
  */
 public class FragmentSolution extends Fragment {
+    private OkHttpClient client = new OkHttpClient();
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,31 +39,25 @@ public class FragmentSolution extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
-    private View.OnClickListener btnService1_click = new View.OnClickListener() {
+    private View.OnClickListener btnSolution1_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 
-            startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
-    private View.OnClickListener btnService2_click = new View.OnClickListener() {
+    private View.OnClickListener btnSolution2_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
-            startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
-    private View.OnClickListener btnService3_click = new View.OnClickListener() {
+    private View.OnClickListener btnSolution3_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
-    private View.OnClickListener btnService4_click = new View.OnClickListener() {
+    private View.OnClickListener btnSolution4_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
-            startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
 
@@ -138,19 +141,20 @@ public class FragmentSolution extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        btnService1 = (ImageButton) getActivity().findViewById(R.id.btnService1);
-        btnService1.setOnClickListener(btnService1_click);
-        btnService2 = (ImageButton) getActivity().findViewById(R.id.btnService2);
-        btnService2.setOnClickListener(btnService2_click);
-        btnService3 = (ImageButton) getActivity().findViewById(R.id.btnService3);
-        btnService3.setOnClickListener(btnService3_click);
-        btnService4 = (ImageButton) getActivity().findViewById(R.id.btnService4);
-        btnService4.setOnClickListener(btnService4_click);
+        btnSolution1 = (ImageButton) getActivity().findViewById(R.id.btnSolution1);
+        btnSolution1.setOnClickListener(btnSolution1_click);
+        btnSolution2 = (ImageButton) getActivity().findViewById(R.id.btnSolution2);
+        btnSolution2.setOnClickListener(btnSolution2_click);
+        btnSolution3 = (ImageButton) getActivity().findViewById(R.id.btnSolution3);
+        btnSolution3.setOnClickListener(btnSolution3_click);
+        btnSolution4 = (ImageButton) getActivity().findViewById(R.id.btnSolution4);
+        btnSolution4.setOnClickListener(btnSolution4_click);
 
     }
 
-    ImageButton btnService1;
-    ImageButton btnService2;
-    ImageButton btnService3;
-    ImageButton btnService4;
+    ImageButton btnSolution1;
+    ImageButton btnSolution2;
+    ImageButton btnSolution3;
+    ImageButton btnSolution4;
+
 }

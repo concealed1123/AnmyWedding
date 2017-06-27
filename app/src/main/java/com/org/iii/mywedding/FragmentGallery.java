@@ -24,14 +24,12 @@ public class FragmentGallery extends Fragment {
     private View.OnClickListener btnService1_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
             startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
     private View.OnClickListener btnService2_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
             startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
@@ -44,7 +42,6 @@ public class FragmentGallery extends Fragment {
     private View.OnClickListener btnService4_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
             startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
