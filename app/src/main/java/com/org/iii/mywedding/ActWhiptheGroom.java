@@ -264,7 +264,7 @@ public class ActWhiptheGroom extends AppCompatActivity {
     private View.OnClickListener btnGames_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            int randGames = (int)(Math.random()*19+1);
+            int randGames = (int)(Math.random()*29+1);
             switch (randGames){
                 case 1:
                     AlertDialog.Builder gamesMessage = new AlertDialog.Builder(ActWhiptheGroom.this);

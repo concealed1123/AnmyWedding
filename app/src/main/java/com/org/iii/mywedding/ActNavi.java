@@ -2,6 +2,7 @@ package com.org.iii.mywedding;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
@@ -29,13 +30,16 @@ public class ActNavi extends AppCompatActivity
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.actnavi);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                .permitAll().build();
+        StrictMode.setThreadPolicy(policy);
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +83,7 @@ public class ActNavi extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -99,6 +104,7 @@ public class ActNavi extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+
             FragmentMember fragmentmember = new FragmentMember();
             FragmentManager manager =  getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,fragmentmember).commit();
@@ -108,6 +114,9 @@ public class ActNavi extends AppCompatActivity
             manager.beginTransaction().replace(R.id.fragment_main,collectionandsolution_fragment).commit();
 
         } else if (id == R.id.nav_slideshow) {
+            /*ActWhiptheGroom_Fragment actWhiptheGroom_fragment = new ActWhiptheGroom_Fragment();
+            FragmentManager manager =  getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_main,actWhiptheGroom_fragment).commit();*/
             startActivity(new Intent(com.org.iii.mywedding.ActNavi.this,ActWhiptheGroom.class));
         } else if (id == R.id.nav_manage) {
 
@@ -127,7 +136,7 @@ public class ActNavi extends AppCompatActivity
         return true;
     }
 
-    ImageButton btnMember;
+
 
 
 }
