@@ -63,15 +63,27 @@ public class FragmentMember extends Fragment {
 
                 }
                 else if(position == 1){
+                    StoreTwo_Fragment storeTwo_fragment = new StoreTwo_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,storeTwo_fragment).commit();
 
                 }
                 else if(position == 2){
+                    StoreThree_Fragment storeThree_fragment = new StoreThree_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,storeThree_fragment).commit();
 
                 }
                 else if(position == 3){
+                    StoreFour_Fragment storeFour_fragment = new StoreFour_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,storeFour_fragment).commit();
 
                 }
                 else if(position == 4){
+                    StoreFive_Fragment storeFive_fragment = new StoreFive_Fragment();
+                    FragmentManager manager = getFragmentManager();
+                    manager.beginTransaction().replace(R.id.fragment_main,storeFive_fragment).commit();
 
                 }
             }

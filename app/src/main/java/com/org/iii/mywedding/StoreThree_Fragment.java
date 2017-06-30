@@ -1,35 +1,25 @@
 package com.org.iii.mywedding;
 
-import android.content.Intent;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
-
-import java.io.IOException;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
+import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link FragmentSolution.OnFragmentInteractionListener} interface
+ * {@link StoreThree_Fragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link FragmentSolution#newInstance} factory method to
+ * Use the {@link StoreThree_Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentSolution extends Fragment {
-    private OkHttpClient client = new OkHttpClient();
+public class StoreThree_Fragment extends Fragment {
+    ConnenctToMSSQL connenctToMSSQL = new ConnenctToMSSQL();
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -40,32 +30,8 @@ public class FragmentSolution extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
-    private View.OnClickListener btnSolution1_click = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            StoreOneWork_Fragment storeOneWork_fragment = new StoreOneWork_Fragment();
-            FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,storeOneWork_fragment).commit();
 
-        }
-    };
-    private View.OnClickListener btnSolution2_click = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-        }
-    };
-    private View.OnClickListener btnSolution3_click = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-        }
-    };
-    private View.OnClickListener btnSolution4_click = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-        }
-    };
-
-    public FragmentSolution() {
+    public StoreThree_Fragment() {
         // Required empty public constructor
     }
 
@@ -75,11 +41,11 @@ public class FragmentSolution extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentSolution.
+     * @return A new instance of fragment StoreThree_Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragmentSolution newInstance(String param1, String param2) {
-        FragmentSolution fragment = new FragmentSolution();
+    public static StoreThree_Fragment newInstance(String param1, String param2) {
+        StoreThree_Fragment fragment = new StoreThree_Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -100,7 +66,26 @@ public class FragmentSolution extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_solution, container, false);
+        View view = inflater.inflate(R.layout.storeone_fragment, container, false);
+        connenctToMSSQL.open();
+        viewData();
+        StoName = (TextView) view.findViewById(R.id.StoName);
+        StoPhone = (TextView) view.findViewById(R.id.StoPhone);
+        StoEmail = (TextView) view.findViewById(R.id.StoEmail);
+        StoAddress = (TextView) view.findViewById(R.id.StoAddress);
+
+
+        StoName.setText(connenctToMSSQL.stores1.get(0));
+        StoPhone.setText(connenctToMSSQL.stores1.get(1));
+        StoEmail.setText(connenctToMSSQL.stores1.get(2));
+        StoAddress.setText(connenctToMSSQL.stores1.get(3));
+
+
+        return view;
+    }
+
+    private void viewData(){
+        connenctToMSSQL.getdata1("select fName,fPhone,fEmail,fAddress from tMember where fIdentity = 1 and fIdMember = 8");
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -119,8 +104,8 @@ public class FragmentSolution extends Fragment {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
         }
-    }*/
-
+    }
+*/
     @Override
     public void onDetach() {
         super.onDetach();
@@ -141,24 +126,8 @@ public class FragmentSolution extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
-        btnSolution1 = (ImageButton) getActivity().findViewById(R.id.btnSolution1);
-        btnSolution1.setOnClickListener(btnSolution1_click);
-        btnSolution2 = (ImageButton) getActivity().findViewById(R.id.btnSolution2);
-        btnSolution2.setOnClickListener(btnSolution2_click);
-        btnSolution3 = (ImageButton) getActivity().findViewById(R.id.btnSolution3);
-        btnSolution3.setOnClickListener(btnSolution3_click);
-        btnSolution4 = (ImageButton) getActivity().findViewById(R.id.btnSolution4);
-        btnSolution4.setOnClickListener(btnSolution4_click);
-
-    }
-
-    ImageButton btnSolution1;
-    ImageButton btnSolution2;
-    ImageButton btnSolution3;
-    ImageButton btnSolution4;
-
+    TextView StoName;
+    TextView StoPhone;
+    TextView StoEmail;
+    TextView StoAddress;
 }
