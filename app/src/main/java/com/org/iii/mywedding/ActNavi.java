@@ -123,13 +123,14 @@ public class ActNavi extends AppCompatActivity
             ActManual_Fragment actManual_fragment = new ActManual_Fragment();
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,actManual_fragment).commit();
-        } else if (id == R.id.nav_share) {
+        }
+        /*else if (id == R.id.nav_share) {
 
 
 
         } else if (id == R.id.nav_send) {
 
-        }
+        }*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

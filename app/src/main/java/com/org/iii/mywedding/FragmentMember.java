@@ -1,6 +1,7 @@
 package com.org.iii.mywedding;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -57,34 +58,34 @@ public class FragmentMember extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    StoreOne_Fragment storeOne_fragment = new StoreOne_Fragment();
-                    FragmentManager manager = getFragmentManager();
-                    manager.beginTransaction().replace(R.id.fragment_main,storeOne_fragment).commit();
-
+                    startActivity(new Intent(getActivity(),StoreOne.class));
                 }
                 else if(position == 1){
-                    StoreTwo_Fragment storeTwo_fragment = new StoreTwo_Fragment();
-                    FragmentManager manager = getFragmentManager();
-                    manager.beginTransaction().replace(R.id.fragment_main,storeTwo_fragment).commit();
-
+                    startActivity(new Intent(getActivity(),StoreTwo.class));
                 }
                 else if(position == 2){
-                    StoreThree_Fragment storeThree_fragment = new StoreThree_Fragment();
-                    FragmentManager manager = getFragmentManager();
-                    manager.beginTransaction().replace(R.id.fragment_main,storeThree_fragment).commit();
-
+                    startActivity(new Intent(getActivity(),StoreThree.class));
                 }
                 else if(position == 3){
-                    StoreFour_Fragment storeFour_fragment = new StoreFour_Fragment();
-                    FragmentManager manager = getFragmentManager();
-                    manager.beginTransaction().replace(R.id.fragment_main,storeFour_fragment).commit();
-
+                    startActivity(new Intent(getActivity(),StoreFour.class));
                 }
                 else if(position == 4){
-                    StoreFive_Fragment storeFive_fragment = new StoreFive_Fragment();
-                    FragmentManager manager = getFragmentManager();
-                    manager.beginTransaction().replace(R.id.fragment_main,storeFive_fragment).commit();
-
+                    startActivity(new Intent(getActivity(),StoreFive.class));
+                }
+                else if(position == 5){
+                    startActivity(new Intent(getActivity(),StoreSix.class));
+                }
+                else if(position == 6){
+                    startActivity(new Intent(getActivity(),StoreSeven.class));
+                }
+                else if(position == 7){
+                    startActivity(new Intent(getActivity(),StoreEight.class));
+                }
+                else if(position == 8){
+                    startActivity(new Intent(getActivity(),StoreNine.class));
+                }
+                else if(position == 9){
+                    startActivity(new Intent(getActivity(),StoreTen.class));
                 }
             }
         });

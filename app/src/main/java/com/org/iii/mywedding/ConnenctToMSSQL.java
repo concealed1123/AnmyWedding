@@ -25,7 +25,7 @@ public class ConnenctToMSSQL extends Application{
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");//.newInstance();
 
-            connection = DriverManager.getConnection("jdbc:jtds:sqlserver://192.168.1.56:1433/myWedding","sa","as");
+            connection = DriverManager.getConnection("jdbc:jtds:sqlserver://mywedding.cqb8null5yfs.ap-northeast-1.rds.amazonaws.com:1433/myWedding","iiiSouth9402","marcoLeonPower9402");
         } catch (Exception e) {
             e.printStackTrace();
             Log.d("Error",e.getMessage());

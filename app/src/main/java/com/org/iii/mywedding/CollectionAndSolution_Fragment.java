@@ -80,7 +80,7 @@ public class CollectionAndSolution_Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("作品");
+        //getActivity().setTitle("");
         viewPager = (ViewPager) getActivity().findViewById(R.id.viewPager);
         tabLayout = (TabLayout) getActivity().findViewById(R.id.tabLayout);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener(){

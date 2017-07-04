@@ -43,9 +43,7 @@ public class FragmentSolution extends Fragment {
     private View.OnClickListener btnSolution1_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            StoreOneWork_Fragment storeOneWork_fragment = new StoreOneWork_Fragment();
-            FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,storeOneWork_fragment).commit();
+
 
         }
     };

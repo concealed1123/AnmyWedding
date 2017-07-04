@@ -31,7 +31,7 @@ import java.util.ArrayList;
  */
 public class StoreOneWork_Fragment extends Fragment {
     private ImageView img;
-    private Button btn,next,pre;
+    private Button next,pre;
     String[] pic = {
             "https://d2uju15hmm6f78.cloudfront.net/image/2017/06/15/9257/2017/06/15/149746103916553600_auto_450x675.jpg",
             "https://d2uju15hmm6f78.cloudfront.net/image/2017/06/15/9257/2017/06/15/149746103940847900_auto_450x674.jpg",
@@ -61,6 +61,7 @@ public class StoreOneWork_Fragment extends Fragment {
         //btn = (Button) findViewById(R.id.uri);
         next = (Button) getActivity().findViewById(R.id.next);
         pre = (Button) getActivity().findViewById(R.id.pre);
+
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,9 +70,6 @@ public class StoreOneWork_Fragment extends Fragment {
                     index = pic.length-1;
                 }
                 img.setImageBitmap(test.get(index));
-
-
-
             }
         });
 
@@ -84,10 +82,7 @@ public class StoreOneWork_Fragment extends Fragment {
                 if(index <0){
                     index=0;
                 }
-
                 img.setImageBitmap(test.get(index));
-
-
             }
         });
     }
@@ -190,6 +185,7 @@ public class StoreOneWork_Fragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+    //讀取網路圖片，型態為Bitmap
     private static Bitmap getBitmapFromURL(String imageUrl)
     {
         try

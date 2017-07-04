@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.org.iii.mywedding.StoreTwo">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="廠商名"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/StoName"
+        android:textSize="20dp"
+        android:shadowColor="#FFB3FF"
+        android:shadowRadius="1"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="---------------------------------------------------------------"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="連絡電話"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/StoPhone"
+        android:textSize="20dp"
+        android:shadowColor="#FFB3FF"
+        android:shadowRadius="1"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="---------------------------------------------------------------"
+        android:textSize="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="聯絡信箱"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/StoEmail"
+        android:textSize="20dp"
+        android:shadowColor="#FFB3FF"
+        android:shadowRadius="1"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="---------------------------------------------------------------"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="聯絡地址"
+        android:textSize="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/StoAddress"
+        android:textSize="20dp"
+        android:shadowColor="#FFB3FF"
+        android:shadowRadius="1"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="---------------------------------------------------------------"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

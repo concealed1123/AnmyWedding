@@ -30,6 +30,16 @@
             android:label="@string/title_activity_act_tab"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ActWhiptheGroom" />
+        <activity android:name=".StoreOne" />
+        <activity android:name=".StoreTwo" />
+        <activity android:name=".StoreThree" />
+        <activity android:name=".StoreFour" />
+        <activity android:name=".StoreFive" />
+        <activity android:name=".StoreSix" />
+        <activity android:name=".StoreSeven" />
+        <activity android:name=".StoreEight" />
+        <activity android:name=".StoreNine" />
+        <activity android:name=".StoreTen"></activity>
     </application>
 
 </manifest>
