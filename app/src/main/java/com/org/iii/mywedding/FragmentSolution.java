@@ -40,16 +40,19 @@ public class FragmentSolution extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
     private View.OnClickListener btnSolution1_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            //startActivity(new Intent(getActivity(),TakeWeddingPic.class));
+            startActivity(new Intent(getActivity(),TakeWeddingPic.class));
 
         }
     };
     private View.OnClickListener btnSolution2_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(getActivity(),WeddingREC.class));
         }
     };
     private View.OnClickListener btnSolution3_click = new View.OnClickListener() {
@@ -143,13 +146,13 @@ public class FragmentSolution extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        btnSolution1 = (ImageButton) getActivity().findViewById(R.id.btnSolution1);
+        btnSolution1 = (ImageButton) getActivity().findViewById(R.id.btnSolution11);
         btnSolution1.setOnClickListener(btnSolution1_click);
-        btnSolution2 = (ImageButton) getActivity().findViewById(R.id.btnSolution2);
+        btnSolution2 = (ImageButton) getActivity().findViewById(R.id.btnSolution12);
         btnSolution2.setOnClickListener(btnSolution2_click);
-        btnSolution3 = (ImageButton) getActivity().findViewById(R.id.btnSolution3);
+        btnSolution3 = (ImageButton) getActivity().findViewById(R.id.btnSolution13);
         btnSolution3.setOnClickListener(btnSolution3_click);
-        btnSolution4 = (ImageButton) getActivity().findViewById(R.id.btnSolution4);
+        btnSolution4 = (ImageButton) getActivity().findViewById(R.id.btnSolution14);
         btnSolution4.setOnClickListener(btnSolution4_click);
 
     }

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StackMain extends Activity {
-
+    /*
     private StackView stackView;
     private Button buttonPrevious;
     private Button buttonNext;
@@ -56,5 +56,5 @@ public class StackMain extends Activity {
         });
     }
 
-
+*/
 }

@@ -16,7 +16,7 @@
             android:layout_height="240dp">
 
             <ImageButton
-                android:id="@+id/btnSolution1"
+                android:id="@+id/btnSolution11"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -25,7 +25,7 @@
                 android:src="@drawable/test1" />
 
             <ImageButton
-                android:id="@+id/btnSolution2"
+                android:id="@+id/btnSolution12"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -71,7 +71,7 @@
             android:layout_weight="0.54">
 
             <ImageButton
-                android:id="@+id/btnSolution3"
+                android:id="@+id/btnSolution13"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -80,7 +80,7 @@
                 android:src="@drawable/makeup" />
 
             <ImageButton
-                android:id="@+id/btnSolution4"
+                android:id="@+id/btnSolution14"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"

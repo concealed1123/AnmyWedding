@@ -39,7 +39,10 @@
         <activity android:name=".StoreSeven" />
         <activity android:name=".StoreEight" />
         <activity android:name=".StoreNine" />
-        <activity android:name=".StoreTen"></activity>
+        <activity android:name=".StoreTen" />
+        <activity android:name=".TakeWeddingPic" />
+        <activity android:name=".WeddingREC" />
+        <activity android:name=".MakeUpSecretary"></activity>
     </application>
 
 </manifest>
