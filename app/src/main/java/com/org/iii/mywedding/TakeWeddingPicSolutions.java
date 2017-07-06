@@ -1,44 +1,44 @@
 package com.org.iii.mywedding;
 
 /**
- * Created by iii on 2017/7/6.
+ * Created by Michael on 2017/7/6.
  */
 
 public class TakeWeddingPicSolutions {
-    private String solutionsImage;
-    private String servicesName;
-    private String solutionName;
-    private String maxPrice;
+    private String storeName;//店家名稱
+    private String imagePic;//方案封面
+    private String serviceName;//服務名稱
+    private String maxPrice;//最高價
 
-    public TakeWeddingPicSolutions(String solutionsImage, String servicesName, String solutionName, String maxPrice) {
-        this.solutionsImage = solutionsImage;
-        this.servicesName = servicesName;
-        this.solutionName = solutionName;
+    public TakeWeddingPicSolutions(String storeName, String imagePic, String serviceName, String maxPrice) {
+        this.storeName = storeName;
+        this.imagePic = imagePic;
+        this.serviceName = serviceName;
         this.maxPrice = maxPrice;
     }
 
-    public String getSoutionName() {
-        return solutionName;
+    public String getStoreName() {
+        return storeName;
     }
 
-    public void setSoutionName(String soutionName) {
-        this.solutionName = soutionName;
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
     }
 
-    public String getSolutionsImage() {
-        return solutionsImage;
+    public String getImagePic() {
+        return imagePic;
     }
 
-    public void setSolutionsImage(String solutionsImage) {
-        this.solutionsImage = solutionsImage;
+    public void setImagePic(String imagePic) {
+        this.imagePic = imagePic;
     }
 
-    public String getServicesName() {
-        return servicesName;
+    public String getServiceName() {
+        return serviceName;
     }
 
-    public void setServicesName(String servicesName) {
-        this.servicesName = servicesName;
+    public void setServiceName(String serviceName) {
+        this.serviceName = serviceName;
     }
 
     public String getMaxPrice() {

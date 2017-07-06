@@ -40,9 +40,8 @@
         <activity android:name=".StoreEight" />
         <activity android:name=".StoreNine" />
         <activity android:name=".StoreTen" />
-        <activity android:name=".TakeWeddingPic" />
-        <activity android:name=".WeddingREC" />
-        <activity android:name=".MakeUpSecretary"></activity>
+        <activity android:name=".MakeUpSecretary" />
+        <activity android:name=".TakeWeddingPic"></activity>
     </application>
 
 </manifest>

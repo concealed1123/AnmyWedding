@@ -3,9 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AnmyWedding.iml" filepath="$PROJECT_DIR$/AnmyWedding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AnmyWedding.iml" filepath="$PROJECT_DIR$/AnmyWedding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/jtds-1.2.7-sources/jtds-1.2.7-sources.iml" filepath="$PROJECT_DIR$/jtds-1.2.7-sources/jtds-1.2.7-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtds-1.2.7-sources/jtds-1.2.7-sources.iml" filepath="$PROJECT_DIR$/jtds-1.2.7-sources/jtds-1.2.7-sources.iml" />
       <module fileurl="file://$PROJECT_DIR$/jtds-1.3.1/jtds-1.3.1.iml" filepath="$PROJECT_DIR$/jtds-1.3.1/jtds-1.3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtds-1.3.1/jtds-1.3.1.iml" filepath="$PROJECT_DIR$/jtds-1.3.1/jtds-1.3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picasso-2.5.2/picasso-2.5.2.iml" filepath="$PROJECT_DIR$/picasso-2.5.2/picasso-2.5.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/picasso-2.5.2/picasso-2.5.2.iml" filepath="$PROJECT_DIR$/picasso-2.5.2/picasso-2.5.2.iml" />
     </modules>
   </component>

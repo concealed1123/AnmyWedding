@@ -52,7 +52,7 @@ public class FragmentSolution extends Fragment {
     private View.OnClickListener btnSolution2_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(getActivity(),WeddingREC.class));
+            //startActivity(new Intent(getActivity(),WeddingREC.class));
         }
     };
     private View.OnClickListener btnSolution3_click = new View.OnClickListener() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:background="#F0BBFF"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F0BBFF"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -12,22 +12,31 @@
         android:src="@mipmap/ic_launcher"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
-            android:id="@+id/txtSolutionName"
+            android:id="@+id/txtStoreName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="40dp"
             android:textSize="20dp"
             android:textColor="#c60a0a"
-            android:text="Solution name"
+            android:text="Store name"
             />
-
-
+        <TextView
+            android:id="@+id/txtserviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:textColor="#c60a0a"
+            android:text="Service name"
+            />
         <TextView
             android:id="@+id/txtminPrice"
             android:layout_width="wrap_content"
@@ -48,17 +57,5 @@
             android:textColor="#101e99"
             android:text="maxPrice"
             />
-        <TextView
-            android:id="@+id/txtserviceName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:textSize="20dp"
-            android:textColor="#c60a0a"
-            android:text="Store name"
-            />
-
     </LinearLayout>
-
 </LinearLayout>
