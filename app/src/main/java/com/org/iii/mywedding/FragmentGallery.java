@@ -24,28 +24,30 @@ public class FragmentGallery extends Fragment {
     private View.OnClickListener btnService1_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            /*
             StoreOneWork_Fragment storeOneWork_fragment = new StoreOneWork_Fragment();
             FragmentManager manager = getFragmentManager();
             manager.beginTransaction().replace(R.id.fragment_main,storeOneWork_fragment).commit();
+            */
             //startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
     private View.OnClickListener btnService2_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
+            //startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
     private View.OnClickListener btnService3_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
+            //startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
     private View.OnClickListener btnService4_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
+            //startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
 
