@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0BBFF">
+    <TextView
+        android:id="@+id/txtCollectionName3"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textColor="#c60a0a"
+        android:text="Collection name"
+        />
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageViewCollections3"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/txtCollectionDescribe3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="#101e99"
+        android:text="Collection Describe"
+        />
+
+</LinearLayout>

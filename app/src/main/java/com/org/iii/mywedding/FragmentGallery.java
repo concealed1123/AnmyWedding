@@ -5,14 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.Toast;
+
+import com.org.iii.mywedding.collection.CBrideSec;
+import com.org.iii.mywedding.collection.CTakeWeddingPic;
+import com.org.iii.mywedding.collection.CWeddingRec;
+import com.org.iii.mywedding.collection.CWeddingSite;
 
 
 /**
@@ -24,6 +25,7 @@ public class FragmentGallery extends Fragment {
     private View.OnClickListener btnService1_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(getActivity(),CTakeWeddingPic.class));
             /*
             StoreOneWork_Fragment storeOneWork_fragment = new StoreOneWork_Fragment();
             FragmentManager manager = getFragmentManager();
@@ -35,18 +37,21 @@ public class FragmentGallery extends Fragment {
     private View.OnClickListener btnService2_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(getActivity(),CWeddingRec.class));
             //startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
     private View.OnClickListener btnService3_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(getActivity(),CBrideSec.class));
             //startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };
     private View.OnClickListener btnService4_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(getActivity(),CWeddingSite.class));
             //startActivity(new Intent(getActivity(),StackMain.class));  //這裡要用getactivity
         }
     };

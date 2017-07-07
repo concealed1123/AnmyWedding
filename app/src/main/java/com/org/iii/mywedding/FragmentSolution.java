@@ -5,19 +5,17 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-import java.io.IOException;
+import com.org.iii.mywedding.solutions.BrideSec;
+import com.org.iii.mywedding.solutions.TakeWeddingPic;
+import com.org.iii.mywedding.solutions.WeddingREC;
+import com.org.iii.mywedding.solutions.WeddingSite;
 
-import okhttp3.Call;
-import okhttp3.Callback;
 import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 
 
 /**
@@ -52,17 +50,19 @@ public class FragmentSolution extends Fragment {
     private View.OnClickListener btnSolution2_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            //startActivity(new Intent(getActivity(),WeddingREC.class));
+            startActivity(new Intent(getActivity(),WeddingREC.class));
         }
     };
     private View.OnClickListener btnSolution3_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(getActivity(),BrideSec.class));
         }
     };
     private View.OnClickListener btnSolution4_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            startActivity(new Intent(getActivity(),WeddingSite.class));
         }
     };
 

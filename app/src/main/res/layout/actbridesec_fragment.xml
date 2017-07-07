@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.org.iii.mywedding.ActBrideSec_Fragment">
+    tools:context="com.org.iii.mywedding.notice.ActBrideSec_Fragment">
 
     <ListView
         android:id="@+id/myListView2"

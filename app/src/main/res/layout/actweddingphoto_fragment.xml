@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/wedding_photo"
 
-    tools:context="com.org.iii.mywedding.ActWeddingPhoto_Fragment">
+    tools:context="com.org.iii.mywedding.notice.ActWeddingPhoto_Fragment">
 
     <ListView
         android:id="@+id/myListView"

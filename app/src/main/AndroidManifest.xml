@@ -41,7 +41,15 @@
         <activity android:name=".StoreNine" />
         <activity android:name=".StoreTen" />
         <activity android:name=".MakeUpSecretary" />
-        <activity android:name=".TakeWeddingPic"></activity>
+        <activity android:name=".solutions.TakeWeddingPic" />
+        <activity android:name=".solutions.WeddingREC" />
+        <activity android:name=".solutions.BrideSec" />
+        <activity android:name=".solutions.WeddingSite" />
+        <activity android:name=".collection.CTakeWeddingPic" />
+        <activity android:name=".collection.CWeddingRec" />
+        <activity android:name=".collection.CBrideSec" />
+        <activity android:name=".collection.CWeddingSite" />
+        <activity android:name=".subCTakeWeddingPic"></activity>
     </application>
 
 </manifest>
