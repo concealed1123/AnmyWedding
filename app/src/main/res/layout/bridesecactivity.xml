@@ -9,9 +9,12 @@
     tools:context="com.org.iii.mywedding.solutions.BrideSec">
     <ListView
         android:id="@+id/listView2"
+        android:background="@drawable/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp" />
+        tools:layout_editor_absoluteX="8dp"
+        android:scrollbars="none"
+        />
 
 </LinearLayout>

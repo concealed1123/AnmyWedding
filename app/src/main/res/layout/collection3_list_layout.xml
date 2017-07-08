@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F0BBFF">
+    >
     <TextView
         android:id="@+id/txtCollectionName3"
         android:layout_width="wrap_content"
@@ -13,6 +13,11 @@
         android:textSize="25dp"
         android:textColor="#c60a0a"
         android:text="Collection name"
+        android:shadowColor="#FF8888"
+        android:shadowRadius="1"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:typeface="sans"
         />
     <ImageView
         android:layout_gravity="center"
@@ -31,6 +36,11 @@
         android:textSize="20dp"
         android:textColor="#101e99"
         android:text="Collection Describe"
+        android:shadowColor="#99BBFF"
+        android:shadowRadius="1"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:typeface="sans"
         />
 
 </LinearLayout>

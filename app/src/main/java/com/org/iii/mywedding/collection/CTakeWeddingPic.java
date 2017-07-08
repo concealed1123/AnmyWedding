@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.org.iii.mywedding.R;
-import com.org.iii.mywedding.subCTakeWeddingPic;
+//import com.org.iii.mywedding.subCTakeWeddingPic;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -43,15 +43,15 @@ public class CTakeWeddingPic extends AppCompatActivity {
                 new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processCTakeWeddingPic.ashx");
             }
         });
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String idd = arrayList.get(position).getId();
                 //URL url =new URL("XXX.ashx?id="+idd);
-                    startActivity(new Intent(CTakeWeddingPic.this,subCTakeWeddingPic.class));
+                    //startActivity(new Intent(CTakeWeddingPic.this,subCTakeWeddingPic.class));
 
             }
-        });
+        });*/
 
     }
     //建class解析JSON
