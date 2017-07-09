@@ -29,6 +29,7 @@ public class CBrideSec extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setTitle("新娘秘書作品集");
         setContentView(R.layout.cbridesecactivity);
         arrayList = new ArrayList<>();
         lv = (ListView)findViewById(R.id.ClistView3);

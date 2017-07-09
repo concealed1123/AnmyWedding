@@ -23,7 +23,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/test1" />
+                android:src="@drawable/white" />
 
             <ImageButton
                 android:id="@+id/ImgBtnWeddingRec"
@@ -32,7 +32,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/test2" />
+                android:src="@drawable/memberphoto4" />
         </LinearLayout>
 
         <LinearLayout
@@ -80,7 +80,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/makeup" />
+                android:src="@drawable/memberphoto2" />
 
             <ImageButton
                 android:id="@+id/ImgBtnWeddingPlace"
@@ -89,7 +89,7 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                android:src="@drawable/site" />
+                android:src="@drawable/memberphoto1" />
         </LinearLayout>
 
         <LinearLayout

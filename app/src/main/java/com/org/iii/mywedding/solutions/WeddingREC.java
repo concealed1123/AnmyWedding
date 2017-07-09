@@ -30,6 +30,7 @@ public class WeddingREC extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setTitle("婚紗攝影的方案");
         setContentView(R.layout.weddingrecactivity);
         arraylist = new ArrayList<>();
         lv = (ListView)findViewById(R.id.listView1);
@@ -77,6 +78,7 @@ public class WeddingREC extends AppCompatActivity {
 
         }
     }
+
     //Read URL
     private static String readURL(String theURL){
         StringBuilder content = new StringBuilder();

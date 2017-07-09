@@ -29,6 +29,7 @@ public class CWeddingRec extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setTitle("婚禮攝影作品集");
         setContentView(R.layout.cweddingrecactivity);
         arrayList = new ArrayList<>();
         lv = (ListView)findViewById(R.id.ClistView2);

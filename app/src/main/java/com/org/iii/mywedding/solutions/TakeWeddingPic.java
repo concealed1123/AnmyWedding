@@ -29,6 +29,7 @@ public class TakeWeddingPic extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setTitle("拍婚紗的方案");
         setContentView(R.layout.takeweddingpic_activity);
         arraylist = new ArrayList<>();
         lv = (ListView)findViewById(R.id.listView);

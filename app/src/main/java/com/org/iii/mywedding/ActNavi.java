@@ -24,12 +24,21 @@ public class ActNavi extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.actnavi);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
                 .permitAll().build();
         StrictMode.setThreadPolicy(policy);
+
+        CollectionAndSolution_Fragment collectionandsolution_fragment = new CollectionAndSolution_Fragment();
+        FragmentManager manager =  getSupportFragmentManager();
+        manager.beginTransaction().replace(R.id.fragment_main,collectionandsolution_fragment).commit();
+
+
+
+
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,7 +76,7 @@ public class ActNavi extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.act_navi, menu);
+
         return true;
     }
 
@@ -91,6 +100,7 @@ public class ActNavi extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {

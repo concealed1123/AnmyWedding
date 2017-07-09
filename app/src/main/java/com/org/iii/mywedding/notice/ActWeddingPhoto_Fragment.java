@@ -84,9 +84,10 @@ public class ActWeddingPhoto_Fragment extends Fragment {
         //return inflater.inflate(R.layout.actweddingphoto_fragment, container, false);
         View view = inflater.inflate(R.layout.actweddingphoto_fragment, container, false);
         listview =(ListView)view.findViewById(R.id.myListView);
+
         adap = new ArrayAdapter<String>(
                         getActivity(),
-                        android.R.layout.simple_list_item_1,
+                        R.layout.manul_adapter,
                         PhotoNotice);
         listview.setAdapter(adap);
 

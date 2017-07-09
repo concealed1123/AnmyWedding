@@ -31,6 +31,7 @@ public class WeddingSite extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setTitle("婚宴場地的方案");
         setContentView(R.layout.weddingsiteactivity);
         arraylist = new ArrayList<>();
         lv = (ListView)findViewById(R.id.listView3);

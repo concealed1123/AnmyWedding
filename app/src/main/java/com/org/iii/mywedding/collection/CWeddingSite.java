@@ -29,6 +29,7 @@ public class CWeddingSite extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setTitle("婚宴場地作品集");
         setContentView(R.layout.cweddingsiteactivity);
         arrayList = new ArrayList<>();
         lv = (ListView)findViewById(R.id.ClistView4);

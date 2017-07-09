@@ -30,6 +30,7 @@ public class BrideSec extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setTitle("新娘秘書的方案");
         setContentView(R.layout.bridesecactivity);
         arraylist = new ArrayList<>();
         lv = (ListView)findViewById(R.id.listView2);
