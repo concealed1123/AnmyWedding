@@ -49,7 +49,8 @@
         <activity android:name=".collection.CWeddingRec" />
         <activity android:name=".collection.CBrideSec" />
         <activity android:name=".collection.CWeddingSite" />
-
+        <activity android:name=".notice.ActManual" />
+        <activity android:name=".notice.Manual_Wedding"></activity>
     </application>
 
 </manifest>

@@ -16,16 +16,9 @@ import android.widget.Toast;
 import com.org.iii.mywedding.R;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link ActWeddingPhoto_Fragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link ActWeddingPhoto_Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class ActWeddingPhoto_Fragment extends Fragment {
-    ListView listview;
+
+    public class ActWeddingPhoto_Fragment extends Fragment {
+        ListView listview;
     String[] PhotoNotice = {"攝影服務","化妝造型","攝影產品",
             "贈品&出借物品","挑片&美編","禮服選擇&出借","付款"};
     ArrayAdapter<String> adap;

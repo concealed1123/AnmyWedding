@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 public class StackAdapter extends ArrayAdapter<StackItem> {
@@ -43,11 +45,15 @@ public class StackAdapter extends ArrayAdapter<StackItem> {
 
                 // "image1", "image2",..
                 String imageName= stackItem.getImageName();
-
+                Picasso.with(context)
+                        .load(imageName)
+                        .resize(500, 500)
+                        .centerCrop()
+                        .into(imageView);
                 int resId= this.getDrawableResIdByName(imageName);
 
-                imageView.setImageResource(resId);
-                imageView.setBackgroundColor(Color.rgb(211,204,188));
+                //imageView.setImageResource(resId);
+                //imageView.setBackgroundColor(Color.rgb(211,204,188));
             }
 
         }

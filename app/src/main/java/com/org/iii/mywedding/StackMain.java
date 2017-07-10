@@ -6,16 +6,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.StackView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class StackMain extends Activity {
-    /*
+
     private StackView stackView;
     private Button buttonPrevious;
     private Button buttonNext;
 
-    private final String[] IMAGE_NAMES= {"image1","image2", "image3", "image4","image5"};
+    private final String[] IMAGE_NAMES= {"/img/portfolio/test1.jpg","/img/portfolio/test2.jpg",
+            "/img/portfolio/test3.jpg", "/img/portfolio/test4.jpg","/img/portfolio/test5.jpg"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +32,8 @@ public class StackMain extends Activity {
         List<StackItem> items = new ArrayList<StackItem>();
 
         for(String imageName: IMAGE_NAMES) {
-            items.add(new StackItem(imageName+".png", imageName));
+
+            items.add(new StackItem(imageName, "http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com" + imageName));
         }
 
         StackAdapter adapt = new StackAdapter(this, R.layout.actstackview, items);
@@ -56,5 +60,5 @@ public class StackMain extends Activity {
         });
     }
 
-*/
+
 }

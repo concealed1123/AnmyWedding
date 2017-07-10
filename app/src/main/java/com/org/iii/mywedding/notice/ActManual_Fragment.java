@@ -1,5 +1,6 @@
 package com.org.iii.mywedding.notice;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -36,19 +37,24 @@ public class ActManual_Fragment extends Fragment {
     private View.OnClickListener ImgBtnWeddingPhoto_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            Bundle bund  = new Bundle();
+            bund.putString("class","1");
+            Intent intent = new Intent(getActivity(),ActManual.class);
+            intent.putExtras(bund);
+            startActivity(intent);
 
-            ActWeddingPhoto_Fragment actWeddingPhoto_fragment = new ActWeddingPhoto_Fragment();
-            FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,actWeddingPhoto_fragment).commit();
+
         }
     };
     /////////////////////////////////////////////////////////////////////////////////////////
     private View.OnClickListener ImgBtnWeddingRec_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            ActWeddingRec_Fragment actweddingrec_fragment = new ActWeddingRec_Fragment();
-            FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,actweddingrec_fragment).commit();
+            Bundle bund  = new Bundle();
+            bund.putString("class","2");
+            Intent intent = new Intent(getActivity(),ActManual.class);
+            intent.putExtras(bund);
+            startActivity(intent);
 
 
         }
@@ -56,9 +62,11 @@ public class ActManual_Fragment extends Fragment {
     private View.OnClickListener ImgBtnBrideSec_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            ActBrideSec_Fragment act_bridesec_Fragment = new ActBrideSec_Fragment();
-            FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,act_bridesec_Fragment).commit();
+            Bundle bund  = new Bundle();
+            bund.putString("class","3");
+            Intent intent = new Intent(getActivity(),ActManual.class);
+            intent.putExtras(bund);
+            startActivity(intent);
 
         }
     };
@@ -66,9 +74,11 @@ public class ActManual_Fragment extends Fragment {
     private View.OnClickListener ImgBtnWeddingPlace_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            ActWeddingPlace_Fragment act_weddingplace_fragment = new ActWeddingPlace_Fragment();
-            FragmentManager manager = getFragmentManager();
-            manager.beginTransaction().replace(R.id.fragment_main,act_weddingplace_fragment).commit();
+            Bundle bund  = new Bundle();
+            bund.putString("class","4");
+            Intent intent = new Intent(getActivity(),ActManual.class);
+            intent.putExtras(bund);
+            startActivity(intent);
         }
     };
     /////////////////////////////////////////////////////////////////////////////////////////

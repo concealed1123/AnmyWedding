@@ -4,11 +4,14 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.org.iii.mywedding.R;
+import com.org.iii.mywedding.StackMain;
 //import com.org.iii.mywedding.subCTakeWeddingPic;
 
 import org.json.JSONArray;
@@ -31,30 +34,26 @@ public class CTakeWeddingPic extends AppCompatActivity {
     String CollectionImg = "";
     String CollectionDes = "";
     String id ="";
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setTitle("拍婚紗作品集");
+        this.setTitle("拍婚紗作品");
         setContentView(R.layout.ctakeweddingpicactivity);
         arrayList = new ArrayList<>();
-        lv = (ListView)findViewById(R.id.ClistView);
+        lv=(ListView)findViewById(R.id.ClistView);
+
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processCTakeWeddingPic.ashx");
             }
         });
-        /*lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String idd = arrayList.get(position).getId();
-                //URL url =new URL("XXX.ashx?id="+idd);
-                    //startActivity(new Intent(CTakeWeddingPic.this,subCTakeWeddingPic.class));
-
-            }
-        });*/
-
     }
+
+
     //建class解析JSON
     class ReadJSON extends AsyncTask<String,Integer,String> {
 
@@ -84,7 +83,14 @@ public class CTakeWeddingPic extends AppCompatActivity {
             CTakeWeddingPicColListAdapter adapter = new CTakeWeddingPicColListAdapter(
                     getApplicationContext(),R.layout.collection1_list_layout,arrayList
             );
+            lv=(ListView)findViewById(R.id.ClistView);
             lv.setAdapter(adapter);
+            lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Toast.makeText(CTakeWeddingPic.this,"123",Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
     //Read URL
