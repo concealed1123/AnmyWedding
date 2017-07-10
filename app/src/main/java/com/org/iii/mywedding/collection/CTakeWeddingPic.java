@@ -33,6 +33,7 @@ public class CTakeWeddingPic extends AppCompatActivity {
     String CollectionName = "";
     String CollectionImg = "";
     String CollectionDes = "";
+    int CollectionFid =0;
     String id ="";
 
 
@@ -48,7 +49,7 @@ public class CTakeWeddingPic extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processCTakeWeddingPic.ashx");
+                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processCTakeWeddingPic.ashx?sid=1");
             }
         });
     }
@@ -71,11 +72,12 @@ public class CTakeWeddingPic extends AppCompatActivity {
                     JSONObject collectionObject = jsonArray.getJSONObject(i);
                     CollectionName = collectionObject.getString("作品名");
                     CollectionDes = collectionObject.getString("簡述");
+                    CollectionFid = collectionObject.getInt("fid");
 //                    id = collectionObject.getString("id");
                     for(int j=0;j<(collectionObject.getJSONArray("tGalleryPhoto")).length();j++){
                         CollectionImg = ((collectionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getString("作品封面");
                     }
-                    arrayList.add(new CTakeWeddingPicCol(CollectionName,CollectionImg,CollectionDes));
+                    arrayList.add(new CTakeWeddingPicCol(CollectionName,CollectionImg,CollectionDes,CollectionFid));
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

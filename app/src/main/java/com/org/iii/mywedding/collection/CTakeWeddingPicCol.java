@@ -8,12 +8,14 @@ public class CTakeWeddingPicCol {
     private String collectionName;//作品名
     private String collectionImg;//作品封面
     private String collectionDes;//作品簡述
+    private  int collectionFid;//作品fid
 //    private String id;
 
-    public CTakeWeddingPicCol(String collectionName, String collectionImg, String collectionDes) {
+    public CTakeWeddingPicCol(String collectionName, String collectionImg, String collectionDes,int collectionFid) {
         this.collectionName = collectionName;
         this.collectionImg = collectionImg;
         this.collectionDes = collectionDes;
+        this.collectionFid = collectionFid;
 //        this.id = id;
     }
 
@@ -24,6 +26,14 @@ public class CTakeWeddingPicCol {
 //    public void setId(String id) {
 //        this.id = id;
 //    }
+
+    public int getCollectionFid() {
+        return collectionFid;
+    }
+
+    public void setCollectionFid(int collectionFid) {
+        this.collectionFid = collectionFid;
+    }
 
     public String getCollectionName() {
         return collectionName;

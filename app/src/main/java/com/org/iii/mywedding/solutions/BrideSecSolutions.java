@@ -9,12 +9,14 @@ public class BrideSecSolutions {
     private String imagePic;//方案封面
     private String serviceName;//服務名稱
     private String maxPrice;//最高價
+    private  int collectionFid;//作品fid
 
-    public BrideSecSolutions(String storeName, String imagePic, String serviceName, String maxPrice) {
+    public BrideSecSolutions(String storeName, String imagePic, String serviceName, String maxPrice, int collectionFid) {
         this.storeName = storeName;
         this.imagePic = imagePic;
         this.serviceName = serviceName;
         this.maxPrice = maxPrice;
+        this.collectionFid = collectionFid;
     }
 
     public String getStoreName() {
@@ -47,5 +49,13 @@ public class BrideSecSolutions {
 
     public void setMaxPrice(String maxPrice) {
         this.maxPrice = maxPrice;
+    }
+
+    public int getCollectionFid() {
+        return collectionFid;
+    }
+
+    public void setCollectionFid(int collectionFid) {
+        this.collectionFid = collectionFid;
     }
 }

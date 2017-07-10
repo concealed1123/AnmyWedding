@@ -9,6 +9,8 @@ public class CBrideSecCollection {
     private String collectionImg;//作品封面
     private String collectionDes;//作品簡述
 
+
+
     public CBrideSecCollection(String collectionName, String collectionImg, String collectionDes) {
         this.collectionName = collectionName;
         this.collectionImg = collectionImg;

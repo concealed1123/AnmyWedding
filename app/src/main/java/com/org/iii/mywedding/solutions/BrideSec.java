@@ -3,6 +3,7 @@ package com.org.iii.mywedding.solutions;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 
 import com.org.iii.mywedding.R;
@@ -26,7 +27,7 @@ public class BrideSec extends AppCompatActivity {
     String Imgpic = "";
     String Servicename = "";
     String Maxprice = "";
-
+    int CollectionFid =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +38,7 @@ public class BrideSec extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processBrideSec.ashx");
+                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processBrideSec.ashx?sid=3");
             }
         });
     }
@@ -54,19 +55,39 @@ public class BrideSec extends AppCompatActivity {
                 JSONObject jsonObject = new JSONObject(content);
                 JSONArray jsonArray = jsonObject.getJSONArray("BrideSecSolution");
 
-
                 for(int i =0;i<jsonArray.length();i++){
+
                     JSONObject solutionObject = jsonArray.getJSONObject(i);
-                    Storename =solutionObject.getString("店家名");
-                    //maxPrice=solutionObject.getString("最高價");
-                    for(int j=0;j<(solutionObject.getJSONArray("tGalleryPhoto")).length();j++){
-                        Imgpic=((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getString("方案封面");
-                        for(int x=0;x<((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getJSONArray("tServices").length();x++){
-                            Servicename=(((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getJSONArray("tServices").getJSONObject(x)).getString("服務名稱");
-                            Maxprice  =(((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getJSONArray("tServices").getJSONObject(x)).getString("最高價");
+
+                    CollectionFid = solutionObject.getInt("fid");
+
+                    Servicename = solutionObject.getString("服務名稱");
+
+                    Maxprice = solutionObject.getString("最高價");
+
+                    JSONArray Member = new JSONArray(solutionObject.getString("tMember")) ;
+
+                    for(int j=0;j<Member.length();j++){
+
+                          Member.getJSONObject(j).getJSONArray("tGalleryPhoto");
+
+                        Storename =  Member.getJSONObject(j).getString("店家名");
+                        for(int k=0;k< Member.getJSONObject(j).getJSONArray("tGalleryPhoto").length();k++){
+                            Imgpic = Member.getJSONObject(j).getJSONArray("tGalleryPhoto").getJSONObject(k).getString("方案封面");
+
+
                         }
                     }
-                    arraylist.add(new BrideSecSolutions(Storename,Imgpic,Servicename,Maxprice));
+                    //maxPrice=solutionObject.getString("最高價");
+//                    for(int j=0;j<(solutionObject.getJSONArray("tGalleryPhoto")).length();j++){
+//                        Imgpic=((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getString("方案封面");
+//                        for(int x=0;x<((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getJSONArray("tServices").length();x++){
+//                            Servicename=(((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getJSONArray("tServices").getJSONObject(x)).getString("服務名稱");
+//                            Maxprice  =(((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getJSONArray("tServices").getJSONObject(x)).getString("最高價");
+//                            CollectionFid = (((solutionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getJSONArray("tServices").getJSONObject(x)).getInt("fid");
+//                        }
+//                    }
+                    arraylist.add(new BrideSecSolutions(Storename,Imgpic,Servicename,Maxprice,CollectionFid));
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

@@ -47,8 +47,8 @@ public class StackAdapter extends ArrayAdapter<StackItem> {
                 String imageName= stackItem.getImageName();
                 Picasso.with(context)
                         .load(imageName)
-                        .resize(500, 500)
-                        .centerCrop()
+                        .resize(250, 250)
+                        .centerInside()
                         .into(imageView);
                 int resId= this.getDrawableResIdByName(imageName);
 

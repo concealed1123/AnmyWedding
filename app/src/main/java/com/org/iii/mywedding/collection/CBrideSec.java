@@ -3,6 +3,7 @@ package com.org.iii.mywedding.collection;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 
 import com.org.iii.mywedding.R;
@@ -21,11 +22,12 @@ import java.util.ArrayList;
 
 public class CBrideSec extends AppCompatActivity {
 
-    ArrayList<CBrideSecCollection>arrayList;
+    ArrayList<CTakeWeddingPicCol>arrayList;
     ListView lv;
     String CollectionName = "";
     String CollectionImg = "";
     String CollectionDes = "";
+    int CollectionFid =0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +38,8 @@ public class CBrideSec extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processCBrideSec.ashx");
+//                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processCBrideSec.ashx");
+                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processCTakeWeddingPic.ashx?sid=3");
             }
         });
     }
@@ -51,15 +54,17 @@ public class CBrideSec extends AppCompatActivity {
         protected void onPostExecute(String content) {
             try {
                 JSONObject jsonObject = new JSONObject(content);
-                JSONArray jsonArray = jsonObject.getJSONArray("CBrideSec");
+                JSONArray jsonArray = jsonObject.getJSONArray("CTakeWeddingPic");
+
                 for(int i=0;i<jsonArray.length();i++){
                     JSONObject collectionObject = jsonArray.getJSONObject(i);
                     CollectionName = collectionObject.getString("作品名");
                     CollectionDes = collectionObject.getString("簡述");
+                    CollectionFid = collectionObject.getInt("fid");
                     for(int j=0;j<(collectionObject.getJSONArray("tGalleryPhoto")).length();j++){
                         CollectionImg = ((collectionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getString("作品封面");
                     }
-                    arrayList.add(new CBrideSecCollection(CollectionName,CollectionImg,CollectionDes));
+                    arrayList.add(new CTakeWeddingPicCol(CollectionName,CollectionImg,CollectionDes,CollectionFid));
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

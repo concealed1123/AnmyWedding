@@ -46,7 +46,9 @@ public class CTakeWeddingPicColListAdapter extends ArrayAdapter<CTakeWeddingPicC
             LayoutInflater layoutInflater = (LayoutInflater) getContext()
                     .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.collection1_list_layout,null,true);
+
         }
+        convertView.setTag(collection.get(position).getCollectionFid());
         CTakeWeddingPicCol cTakeWeddingPicCol = getItem(position);
         ImageView imageView = (ImageView)convertView.findViewById(R.id.imageViewCollections1);
         Picasso.with(context).load("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com"+cTakeWeddingPicCol.getCollectionImg()).into(imageView);
@@ -60,7 +62,17 @@ public class CTakeWeddingPicColListAdapter extends ArrayAdapter<CTakeWeddingPicC
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,StackMain.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("fid",v.getTag().toString());
+                bundle.putInt("CollectionOrSolution",1);
+                intent.putExtras(bundle);
                 context.startActivity(intent);
+//                Bundle bund  = new Bundle();
+//                bund.putString("class","2");
+//                Intent intent = new Intent(getActivity(),ActManual.class);
+//                intent.putExtras(bund);
+//                startActivity(intent);
+
             }
         });
         return  convertView;

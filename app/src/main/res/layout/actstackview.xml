@@ -7,14 +7,15 @@
     <ImageView
 
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:adjustViewBounds="true"
         android:cropToPadding="false"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         android:src="@drawable/image1" />
 
     <TextView

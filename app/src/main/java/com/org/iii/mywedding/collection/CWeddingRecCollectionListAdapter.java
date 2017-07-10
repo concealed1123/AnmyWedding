@@ -2,6 +2,8 @@ package com.org.iii.mywedding.collection;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.org.iii.mywedding.R;
+import com.org.iii.mywedding.StackMain;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -21,12 +24,12 @@ import java.util.ArrayList;
  * Created by iii on 2017/7/7.
  */
 
-public class CWeddingRecCollectionListAdapter extends ArrayAdapter<CWeddingRecCollection> {
+public class CWeddingRecCollectionListAdapter extends ArrayAdapter<CTakeWeddingPicCol> {
 
-    ArrayList<CWeddingRecCollection> collection;
+    ArrayList<CTakeWeddingPicCol> collection;
     Context context;
     int resource;
-    public CWeddingRecCollectionListAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<CWeddingRecCollection> collection) {
+    public CWeddingRecCollectionListAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<CTakeWeddingPicCol> collection) {
         super(context, resource, collection);
         this.collection = collection;
         this.context = context;
@@ -41,7 +44,8 @@ public class CWeddingRecCollectionListAdapter extends ArrayAdapter<CWeddingRecCo
                     .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
             convertView = layoutInflater.inflate(R.layout.collection2_list_layout,null,true);
         }
-        CWeddingRecCollection cWeddingRecCollection = getItem(position);
+        convertView.setTag(collection.get(position).getCollectionFid());
+        CTakeWeddingPicCol cWeddingRecCollection = getItem(position);
         ImageView imageView = (ImageView)convertView.findViewById(R.id.imageViewCollections2);
         Picasso.with(context).load("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com"+cWeddingRecCollection.getCollectionImg()).into(imageView);
         ///////////////////////////////////////////////////////////////////////////////////////////
@@ -50,6 +54,25 @@ public class CWeddingRecCollectionListAdapter extends ArrayAdapter<CWeddingRecCo
         ///////////////////////////////////////////////////////////////////////////////////////////
         TextView txtCollectionDescribe = (TextView)convertView.findViewById(R.id.txtCollectionDescribe2);
         txtCollectionDescribe.setText(cWeddingRecCollection.getCollectionDes());
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context,StackMain.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("fid",v.getTag().toString());
+                bundle.putInt("CollectionOrSolution",1);
+                intent.putExtras(bundle);
+                context.startActivity(intent);
+//                Bundle bund  = new Bundle();
+//                bund.putString("class","2");
+//                Intent intent = new Intent(getActivity(),ActManual.class);
+//                intent.putExtras(bund);
+//                startActivity(intent);
+
+            }
+        });
+
+
         return  convertView;
     }
 }
