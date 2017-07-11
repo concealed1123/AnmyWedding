@@ -43,26 +43,44 @@ public class FragmentSolution extends Fragment {
         @Override
         public void onClick(View v) {
             //startActivity(new Intent(getActivity(),TakeWeddingPic.class));
-            startActivity(new Intent(getActivity(),TakeWeddingPic.class));
+
+            Intent intent = new Intent(getActivity(),BrideSec.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("ServiceClass",1);
+            intent.putExtras(bundle);
+            startActivity(intent);
 
         }
     };
     private View.OnClickListener btnSolution2_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(getActivity(),WeddingREC.class));
+            Intent intent = new Intent(getActivity(),BrideSec.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("ServiceClass",2);
+            intent.putExtras(bundle);
+            startActivity(intent);
+
         }
     };
     private View.OnClickListener btnSolution3_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(getActivity(),BrideSec.class));
+            Intent intent = new Intent(getActivity(),BrideSec.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("ServiceClass",3);
+            intent.putExtras(bundle);
+            startActivity(intent);
         }
     };
     private View.OnClickListener btnSolution4_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            startActivity(new Intent(getActivity(),WeddingSite.class));
+            Intent intent = new Intent(getActivity(),BrideSec.class);
+            Bundle bundle = new Bundle();
+            bundle.putInt("ServiceClass",4);
+            intent.putExtras(bundle);
+            startActivity(intent);
         }
     };
 

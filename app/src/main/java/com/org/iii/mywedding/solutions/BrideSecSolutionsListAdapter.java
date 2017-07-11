@@ -53,21 +53,28 @@ public class BrideSecSolutionsListAdapter extends ArrayAdapter<BrideSecSolutions
         TextView txtStoreName = (TextView)convertView.findViewById(R.id.txtStoreName2);
         txtStoreName.setText(solution.get(position).getStoreName());
         ////////////////////////////////////////////////////////////////////////
-        TextView txtserviceName = (TextView)convertView.findViewById(R.id.txtserviceName2);
+        final TextView txtserviceName = (TextView)convertView.findViewById(R.id.txtserviceName2);
         txtserviceName.setText(solution.get(position).getServiceName());
         ////////////////////////////////////////////////////////////////////////
         TextView txtmaxPrice = (TextView)convertView.findViewById(R.id.txtmaxPrice2);
         txtmaxPrice.setText(solution.get(position).getMaxPrice());
 
+
+
+
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent intent = new Intent(context,StackMain.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("fid",v.getTag().toString());
+                bundle.putString("ServiceTitle",txtserviceName.getText().toString());
                 bundle.putInt("CollectionOrSolution",2);
                 intent.putExtras(bundle);
                 context.startActivity(intent);
+
+
             }
         });
 

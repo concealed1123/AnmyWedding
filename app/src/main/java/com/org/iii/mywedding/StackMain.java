@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.StackView;
+import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
@@ -29,6 +30,7 @@ public class StackMain extends Activity {
     private StackView stackView;
     private Button buttonPrevious;
     private Button buttonNext;
+    private TextView textView;
 
     private ArrayList<String> IMAGE_NAMES;
 
@@ -40,11 +42,15 @@ public class StackMain extends Activity {
         this.stackView = (StackView) findViewById(R.id.stackView);
         this.buttonNext = (Button) findViewById(R.id.button_next);
         this.buttonPrevious = (Button) findViewById(R.id.button_previous);
+        this.textView = (TextView) findViewById(R.id.textView);
+
 
 
         Intent intent = getIntent();
         String fid = intent.getExtras().getString("fid");
         int CoS = intent.getExtras().getInt("CollectionOrSolution");
+        String title=intent.getExtras().getString("ServiceTitle");
+        textView.setText(title);
 
         StrictMode.ThreadPolicy l_policy =
                 new StrictMode.ThreadPolicy.Builder().permitAll().build();

@@ -9,23 +9,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="英正的拍婚紗作品"
-        android:layout_marginTop="31dp"
-        android:textColor="#336633"
-        android:textSize="20sp"
+        android:text="相關照片"
+        android:layout_marginTop="20dp"
+        android:textColor="#F00"
+        android:textSize="30dp"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView" />
+/>
 
     <StackView
         android:id="@+id/stackView"
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="70dp"
-        android:layout_marginTop="70dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
         android:animateFirstView="false"
         android:animateLayoutChanges="false"
         android:animationCache="true"
@@ -33,6 +33,18 @@
         android:elevation="0dp"
         android:loopViews="false"
         ></StackView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textColor="#336633"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
 
     <Button
         style="?android:attr/buttonStyleSmall"

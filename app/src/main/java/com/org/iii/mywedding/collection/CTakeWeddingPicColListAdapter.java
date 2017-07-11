@@ -53,7 +53,7 @@ public class CTakeWeddingPicColListAdapter extends ArrayAdapter<CTakeWeddingPicC
         ImageView imageView = (ImageView)convertView.findViewById(R.id.imageViewCollections1);
         Picasso.with(context).load("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com"+cTakeWeddingPicCol.getCollectionImg()).into(imageView);
         ///////////////////////////////////////////////////////////////////////////////////////////
-        TextView txtCollectionName = (TextView)convertView.findViewById(R.id.txtCollectionName);
+       final TextView txtCollectionName = (TextView)convertView.findViewById(R.id.txtCollectionName);
         txtCollectionName.setText(cTakeWeddingPicCol.getCollectionName());
         ///////////////////////////////////////////////////////////////////////////////////////////
         TextView txtCollectionDescribe = (TextView)convertView.findViewById(R.id.txtCollectionDescribe);
@@ -65,6 +65,7 @@ public class CTakeWeddingPicColListAdapter extends ArrayAdapter<CTakeWeddingPicC
                 Bundle bundle = new Bundle();
                 bundle.putString("fid",v.getTag().toString());
                 bundle.putInt("CollectionOrSolution",1);
+                bundle.putString("ServiceTitle",txtCollectionName.getText().toString());
                 intent.putExtras(bundle);
                 context.startActivity(intent);
 //                Bundle bund  = new Bundle();

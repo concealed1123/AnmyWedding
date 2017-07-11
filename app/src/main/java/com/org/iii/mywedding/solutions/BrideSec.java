@@ -1,5 +1,6 @@
 package com.org.iii.mywedding.solutions;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,20 +29,43 @@ public class BrideSec extends AppCompatActivity {
     String Servicename = "";
     String Maxprice = "";
     int CollectionFid =0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setTitle("新娘秘書的方案");
+
+        Intent intent = getIntent();
+
+        final int  sid = intent.getExtras().getInt("ServiceClass");
+
+
+
+        this.setTitle(settitle(sid));
         setContentView(R.layout.bridesecactivity);
         arraylist = new ArrayList<>();
         lv = (ListView)findViewById(R.id.listView2);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processBrideSec.ashx?sid=3");
+                new ReadJSON().execute("http://ec2-13-114-47-63.ap-northeast-1.compute.amazonaws.com/processBrideSec.ashx?sid="+ sid);
             }
         });
     }
+
+
+    private String settitle(int sid){
+
+        if(sid == 1)
+            return "新娘秘書的方案";
+        if(sid == 2)
+            return "婚禮攝影的方案";
+        if(sid == 3)
+            return "新娘秘書的方案";
+        if(sid == 4)
+            return "婚宴場地的方案";
+         return "";
+    }
+
     //建class解析JSON
     class ReadJSON extends AsyncTask<String,Integer,String> {
 
