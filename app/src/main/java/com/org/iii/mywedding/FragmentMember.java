@@ -87,6 +87,15 @@ public class FragmentMember extends Fragment {
                 else if(position == 9){
                     startActivity(new Intent(getActivity(),StoreTen.class));
                 }
+                else if(position == 10){
+                    startActivity(new Intent(getActivity(),StoreEleven.class));
+                }
+                else if(position == 11){
+                    startActivity(new Intent(getActivity(),StoreTwelev.class));
+                }
+                else if(position == 12){
+                    startActivity(new Intent(getActivity(),StoreThirteen.class));
+                }
             }
         });
 

@@ -58,9 +58,10 @@ public class CBrideSec extends AppCompatActivity {
 
                 for(int i=0;i<jsonArray.length();i++){
                     JSONObject collectionObject = jsonArray.getJSONObject(i);
+                    CollectionFid = collectionObject.getInt("fid");
                     CollectionName = collectionObject.getString("作品名");
                     CollectionDes = collectionObject.getString("簡述");
-                    CollectionFid = collectionObject.getInt("fid");
+                    //CollectionFid = collectionObject.getInt("fid");
                     for(int j=0;j<(collectionObject.getJSONArray("tGalleryPhoto")).length();j++){
                         CollectionImg = ((collectionObject.getJSONArray("tGalleryPhoto")).getJSONObject(j)).getString("作品封面");
                     }

@@ -50,7 +50,10 @@
         <activity android:name=".collection.CBrideSec" />
         <activity android:name=".collection.CWeddingSite" />
         <activity android:name=".notice.ActManual" />
-        <activity android:name=".notice.Manual_Wedding"></activity>
+        <activity android:name=".notice.Manual_Wedding" />
+        <activity android:name=".StoreEleven" />
+        <activity android:name=".StoreTwelev" />
+        <activity android:name=".StoreThirteen"></activity>
     </application>
 
 </manifest>
