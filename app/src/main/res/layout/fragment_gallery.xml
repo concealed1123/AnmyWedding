@@ -13,7 +13,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp">
+            android:layout_height="210dp">
 
             <ImageButton
                 android:id="@+id/btnService1"
@@ -40,8 +40,9 @@
             android:layout_weight="1">
 
             <TextView
+
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:clickable="false"
@@ -49,8 +50,9 @@
                 android:text="拍婚紗"></TextView>
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:clickable="false"

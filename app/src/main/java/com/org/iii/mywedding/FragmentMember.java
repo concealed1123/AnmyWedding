@@ -46,6 +46,10 @@ public class FragmentMember extends Fragment {
         Sto_listView.setAdapter(adap);
         return view;
     }
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        getActivity().setTitle("廠商列表");
+    }
     private void viewData(){
         connenctToMSSQL.getdata("select fName from tMember where fIdentity = 1");
     }

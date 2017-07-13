@@ -134,7 +134,7 @@ public class ActManual extends Activity {
                 Log.d("html", html);
 
 
-               String replace = html.replaceAll("(?:<li>|<ol>|\\r\\n|</li>|</ol>|<h6>|</h6>|<p>|</p>|<br/>)","");
+               String replace = html.replaceAll("(?:<li>|<ol>|\\r\\n|</li>|</ol>|<h6>|</h6>|<p>|</p>|<br/>|<b>|</b>|<ul>|</ul>)","");
 
 //                Toast.makeText(ActManual.this,replace,Toast.LENGTH_SHORT).show();
 

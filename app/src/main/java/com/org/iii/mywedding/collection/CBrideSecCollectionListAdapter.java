@@ -59,6 +59,7 @@ public class CBrideSecCollectionListAdapter extends ArrayAdapter<CTakeWeddingPic
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context,StackMain.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 Bundle bundle = new Bundle();
                 bundle.putString("fid",v.getTag().toString());
                 bundle.putString("ServiceTitle",txtCollectionName.getText().toString());
